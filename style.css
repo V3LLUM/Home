@@ -68,7 +68,6 @@ main:has(.willem-header.is--loading) {
   display: flex;
   position: relative;
 }
-
 .willem__h1-start {
   justify-content: flex-end;
   width: 2.525em; 
