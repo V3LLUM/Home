@@ -1,6 +1,5 @@
 <style>
 
-/* 🟢 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ [STYLE] William Intro //START ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ 🟢 */
 
 body {
   background-color: Wild Sand;
@@ -269,7 +268,6 @@ main:has(.willem-header.is--loading) {
   }
 }
 
-/* ❌ DELETE THIS SOON ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ❌ */
 .osmo-credits__p {
   pointer-events: auto;
   text-align: center;
@@ -281,13 +279,11 @@ main:has(.willem-header.is--loading) {
   color: rgba(255, 255, 255, 0.6);
 }
 
-/* ❌ DELETE THIS SOON ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ❌ */
 .osmo-credits__p-a {
   color: #f4f4f4;
       /* #f4f4f4; "Wild Sand" */
 }
 
-/* ❌ DELETE THIS SOON ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ❌ */
 @media screen and (max-width: 991px) {
   .osmo-credits__p {
     display: none;
@@ -303,11 +299,6 @@ main:has(.willem-header.is--loading) {
   font-display: swap;
 }
 
-/* 🔴 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ [STYLE] William Intro //END ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ 🔴 */
-
-/* ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖ */
-
-/* 🟢 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ [STYLE] 🏔️ //START ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ 🟢 */
 
 /* FONT | QUICKSAND */
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet");
@@ -361,14 +352,12 @@ body {
   z-index: 1000;
 }
 
-/* 🏔️ MAN / OOZE _____________________________________________________________ 🏔️ MAN / OOZE */
 #man {
   top: inherit;
   bottom: 0; /* 🟢 */
   opacity: 100%;
 }
 
-/* 🏔️ SLIDER  ____________________________________________________________________ 🏔️ SLIDER */
 section img {
   position: absolute;
   top: 0; /* 🟢 */
@@ -380,18 +369,14 @@ section img {
   pointer-events: none;
 }
 
-/* 🏔️ V3||UM TEXT COLOR  ______________________________________________ 🏔️ V3||UM TEXT COLOR */
 #text {
   position: relative;
   color: transparent; /* 🟡 WHITE */
   font-size: 7rem; /* 🟡 10rem; */
 }
 
-/* 🔴 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ [STYLE] 🏔️ //END ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ 🔴 */
 
-/* ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖ */
 
-/* 🟢 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ [STYLE] 🍱 //START ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ 🟢 */
 
 @import "normalize.css";
 
@@ -406,12 +391,12 @@ body {
   font-family: Montserrat, Helvetica, Sans-Serif;
 }
 
-/* 🍱② _______________________________________________________________________________ 🍱② */
+
 h1 {
   font-size: clamp(2rem, 0vw + 0rem, 0rem);    
-              /* 🟡2rem, 6vw + 1rem, 8rem */
+              /* 2rem, 6vw + 1rem, 8rem */
   font-weight: 900; 
-          /* 🟡600; */
+          /* 600; */
   background: linear-gradient(90deg, oklch(36% 0.5 340), oklch(90% 0.5 200));
            /* linear-gradient(90deg, oklch(36% 0.5 340), oklch(90% 0.5 200)); */
   color: transparent;
@@ -419,16 +404,16 @@ h1 {
   -webkit-background-clip: text;
 }
 
-/* 🍱② SPACE BETWEEN HEADER & ② TEXT ______________________________________________________ */
+
 main {
-  width: 100%; /* 🟢 */
-  max-width: 900px; /* 🟢 */
-  margin: 0 auto; /* 🟢 */
+  width: 100%; /*  */
+  max-width: 900px; /*  */
+  margin: 0 auto; /*  */
 }
 
-/* 🍱⑤ STICKY IMG _________________________________________________________ 🍱⑤ STICKY IMG */
+
 .sticky {
-  width: 50%; /* 🟡 50 */
+  width: 50%; /*  50 */
   aspect-ratio: 1;
   position: sticky;
   bottom: 0; /* 0 */
@@ -446,19 +431,19 @@ main {
 			/* L/R ?*/
 }
 
-/* 🍱① _______________________________________________________________________________ 🍱① */
+
 section {
   container-type: inline-size;
 }
 section:nth-of-type(2) p {
-  font-weight: 600; /* 🟡 600 */
+  font-weight: 600; /*  600 */
   font-size: clamp(1.5rem, 0vw + 0rem, 0rem); 
-            /* 🟡 (1.5rem, 30vw + 1rem, 4rem); */
+            /*  (1.5rem, 30vw + 1rem, 4rem); */
   text-align: center;
   justify-content: center; /* " ??? DOES THIS WORK ??? " */
-  max-width: 80%; /* 🟡 80 */
+  max-width: 80%; /*  80 */
   margin: 25vh auto; 
-    /* 🟡 25vh auto; */
+    /*  25vh auto; */
   background: linear-gradient(
     to right in oklab,
     oklch(63% 0.5 337) 0%,
@@ -479,7 +464,6 @@ p {
   position: relative;
 }
 
-/* 🍱③ ______________________________________________________________________________ 🍱③ */
 section:nth-of-type(3) h2 {
   font-size: clamp(2rem, 0vw + 0rem, 0rem);
 			  /* (🟡 2rem, 8vw + 1rem, 12rem); */
@@ -491,14 +475,13 @@ section:nth-of-type(3) h2 {
   -webkit-background-clip: text;
 }
 
-/* 🍱④ LEFT _____________________________________________________________________ 🍱④ LEFT */
 section:nth-of-type(4) {
   display: grid;
   padding-top: 2rem; /* 2rem; TOP PADDING OF COLUMNS*/
   gap: 4rem; /* 4rem; BOTTOM PADDING OF COLUMNS  */
 }
 
-/* 🍱⑤ L.COLUMN ____________________________________________________________ 🍱⑤ L. COLUMN */
+
 .box {
   width: 100%;
   background: hsl(0 0% 100%);
@@ -510,7 +493,7 @@ section:nth-of-type(4) {
   padding: 1rem; /* 🟢 1rem; ??? IDK ??? */
 }
 
-/* 🍱④ RIGHT ___________________________________________________________________ 🍱④ RIGHT */
+
 .box__content {
   display: grid;
   place-items: center;
@@ -532,7 +515,7 @@ section:nth-of-type(4) {
 			/* clamp(0.875rem, 0.5vw + 1rem, 2rem); */
 }
 
-/* 🍱⑤ TEXT BOX _____________________________________________________________ 🍱⑤ TEXT BOX */
+
 .box--two {
   position: absolute;
   bottom: 0; 
@@ -552,7 +535,7 @@ section:nth-of-type(4) {
             /* 500; OG */
 }
 
-/* 🎨 ______________________________________________________________ TEXT COLOR/↓GRADIENT 🎨 */
+
 .box--two p span {
   background: linear-gradient(90deg, BLACK, GRAY, LIGHTGRAY, GRAY, BLACK);
   color: transparent;
@@ -588,7 +571,7 @@ section:nth-of-type(4) {
   position: relative;
 }
 
-/* 🍱⑥ _______________________________________________________________________________ 🍱⑥ */
+
 section:nth-of-type(5) {
   display: grid;
   gap: 2rem; 
@@ -603,7 +586,7 @@ section:nth-of-type(5) {
   transform-style: preserve-3d;
 }
 
-/* 🍱[XTRA] -MUST HAVE/CANNOT DELETE ______________________________________________ 🍱[XTRA] */
+
 section:nth-of-type(5)::before {
   content: "";
   z-index: -1;
@@ -622,7 +605,6 @@ section:nth-of-type(5)::before {
                     /* (transparent, WHITE 25%); */
 }
 
-/* 🍱⑥ _______________________________________________________________________________ 🍱⑥ */
 @container (max-width: 420px) { 
                   /* 🟢420 */
   section:nth-of-type(5) {
@@ -636,7 +618,6 @@ section:nth-of-type(5)::before {
   }
 }
 
-/* 🍱⑦ _______________________________________________________________________________ 🍱⑦ */
 section:nth-of-type(6) {
   min-height: 8vh; /* 8vh - FIN TEXT SPACE */
   display: grid;
@@ -649,7 +630,6 @@ section:nth-of-type(6) h2 {
                /*  ^ TEXT SIZE */
 }
 
-/* 🍱⑥ _______________________________________________________________________________ 🍱⑥ */
 .bento--mini {
   aspect-ratio: 1;
              /* 1; */
@@ -667,18 +647,12 @@ section:nth-of-type(6) h2 {
   font-size: clamp(1rem, 1vw + 1rem, 1rem);
                /* (1.5rem, 2vw + 1rem, 2rem); */
   font-weight: 400;
-          /* 🟡600 -TEXT SIZE */
+          /* 600 -TEXT SIZE */
   color: hsl(0 0% 5%);
   position: relative;
 }
 
 
-
-/* 🔴 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ [STYLE] 🍱 //END ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ 🔴 */
-
-/* ➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖ */
-
-/* 🟢 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ [STYLE] 🔖 //START ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ 🟢 */
 
 
 @import url("https://fonts.googleapis.com/css2?family=Honk:wght@400;500;600&display=swap");
@@ -701,7 +675,7 @@ img {
           /* 100% */
 }
 
-<!-- ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ //CSS 🔖 //START ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ -->
+/* ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ //CSS 🔖 //START ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ */
 /* ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ❗️ (MUST HAVE THAT ^ line or it won't work) ❗️ ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ */
 
 body {
