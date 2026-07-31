@@ -1,6 +1,4 @@
 <script>
-
-
 function initWillemLoadingAnimation() {
   const container = document.querySelector(".willem-header");
   const loadingLetter = container.querySelectorAll(".willem__letter");
@@ -157,14 +155,14 @@ function initWillemLoadingAnimation() {
   }
 }
 
-// Initialize Willem Loading Animation
+/* Initialize Willem Loading Animation */
 document.addEventListener("DOMContentLoaded", () => {
   initWillemLoadingAnimation();
 });
 
 
-// GitHub Repo : https://github.com/aryan-tayal/Mountains-Parallax
-// Live Site : https://aryan-tayal.github.io/Mountains-Parallax/
+/* GitHub Repo : https://github.com/aryan-tayal/Mountains- */
+/* Live Site : https://aryan-tayal.github.io/Mountains-Parallax/ */
 
 const mountainLeft = document.querySelector("#mountain_left");
 const mountainRight = document.querySelector("#mountain_right");
@@ -182,8 +180,6 @@ window.addEventListener("scroll", () => {
   text.style.bottom = `-${value}px`;
   man.style.height = `${window.innerHeight - value}px`;
 });
-
-
 
 const products = document.querySelectorAll(".product");
 const container = document.querySelector(".container");
