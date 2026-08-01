@@ -1,5 +1,6 @@
 <style>
 
+/* [STYLE] William Intro //START */
 
 body {
   background-color: Wild Sand;
@@ -67,6 +68,7 @@ main:has(.willem-header.is--loading) {
   display: flex;
   position: relative;
 }
+
 .willem__h1-start {
   justify-content: flex-end;
   width: 2.525em; 
@@ -268,6 +270,7 @@ main:has(.willem-header.is--loading) {
   }
 }
 
+/* DELETE THIS SOON */
 .osmo-credits__p {
   pointer-events: auto;
   text-align: center;
@@ -279,11 +282,13 @@ main:has(.willem-header.is--loading) {
   color: rgba(255, 255, 255, 0.6);
 }
 
+/* DELETE THIS SOON */
 .osmo-credits__p-a {
   color: #f4f4f4;
       /* #f4f4f4; "Wild Sand" */
 }
 
+/* DELETE THIS SOON */
 @media screen and (max-width: 991px) {
   .osmo-credits__p {
     display: none;
@@ -299,6 +304,13 @@ main:has(.willem-header.is--loading) {
   font-display: swap;
 }
 
+/* [STYLE] William Intro //END */
+
+/*  */
+/*  */
+/*  */
+
+/* [STYLE] MTN. //START */
 
 /* FONT | QUICKSAND */
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet");
@@ -352,31 +364,39 @@ body {
   z-index: 1000;
 }
 
+/* MTN. MAN / OOZE */
 #man {
   top: inherit;
-  bottom: 0; /* 🟢 */
+  bottom: 0;
   opacity: 100%;
 }
 
+/* MTN. SLIDER */
 section img {
   position: absolute;
-  top: 0; /* 🟢 */
-  left: 0; /* 🟢 */
-  width: 100%; /* 🟢 */
-  height: 100%; /* 🟢 */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   opacity: 90%;
   object-fit: cover;
   pointer-events: none;
 }
 
+/* MTN. V3||UM TEXT COLOR */
 #text {
   position: relative;
-  color: transparent; /* 🟡 WHITE */
-  font-size: 7rem; /* 🟡 10rem; */
+  color: transparent; /* WHITE */
+  font-size: 7rem; /* 10rem; */
 }
 
+/* [STYLE] MTN. //END */
 
+/*  */
+/*  */
+/*  */
 
+/* [STYLE] BENTO //START */
 
 @import "normalize.css";
 
@@ -391,12 +411,12 @@ body {
   font-family: Montserrat, Helvetica, Sans-Serif;
 }
 
-
+/* BENTO.2 */
 h1 {
   font-size: clamp(2rem, 0vw + 0rem, 0rem);    
-              /* 2rem, 6vw + 1rem, 8rem */
+                /* 2rem, 6vw + 1rem, 8rem */
   font-weight: 900; 
-          /* 600; */
+            /* 600; */
   background: linear-gradient(90deg, oklch(36% 0.5 340), oklch(90% 0.5 200));
            /* linear-gradient(90deg, oklch(36% 0.5 340), oklch(90% 0.5 200)); */
   color: transparent;
@@ -404,16 +424,17 @@ h1 {
   -webkit-background-clip: text;
 }
 
-
+/* BENTO.2 - SPACE BETWEEN HEADER & 2 TEXT */
 main {
-  width: 100%; /*  */
-  max-width: 900px; /*  */
-  margin: 0 auto; /*  */
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
-
+/* BENTO.3 - STICKY IMG */
 .sticky {
-  width: 50%; /*  50 */
+  width: 50%;
+      /* 50 */
   aspect-ratio: 1;
   position: sticky;
   bottom: 0; /* 0 */
@@ -431,19 +452,20 @@ main {
 			/* L/R ?*/
 }
 
-
+/* BENTO.1 */
 section {
   container-type: inline-size;
 }
 section:nth-of-type(2) p {
-  font-weight: 600; /*  600 */
+  font-weight: 600; /* 600 */
   font-size: clamp(1.5rem, 0vw + 0rem, 0rem); 
-            /*  (1.5rem, 30vw + 1rem, 4rem); */
+               /* (1.5rem, 30vw + 1rem, 4rem); */
   text-align: center;
   justify-content: center; /* " ??? DOES THIS WORK ??? " */
-  max-width: 80%; /*  80 */
+  max-width: 80%; 
+          /* 80 */
   margin: 25vh auto; 
-    /*  25vh auto; */
+       /* 25vh auto; */
   background: linear-gradient(
     to right in oklab,
     oklch(63% 0.5 337) 0%,
@@ -464,42 +486,45 @@ p {
   position: relative;
 }
 
+/* BENTO.3 */
 section:nth-of-type(3) h2 {
   font-size: clamp(2rem, 0vw + 0rem, 0rem);
-			  /* (🟡 2rem, 8vw + 1rem, 12rem); */
+			     /* (2rem, 8vw + 1rem, 12rem); */
   font-weight: 100;
-		  /* 🟡 300; */
+		     /* 300; */
   background: linear-gradient(90deg, RED, GREEN);
   color: transparent;
 		/* MUST BE ^"transparent" TO BE GRADIENT TEXT */
   -webkit-background-clip: text;
 }
 
+/* BENTO.4 - LEFT */
 section:nth-of-type(4) {
   display: grid;
   padding-top: 2rem; /* 2rem; TOP PADDING OF COLUMNS*/
   gap: 4rem; /* 4rem; BOTTOM PADDING OF COLUMNS  */
 }
 
-
+/* BENTO.5 - L.COLUMN */
 .box {
   width: 100%;
   background: hsl(0 0% 100%);
-  border-radius: 2rem; /* 🟢 (BIGGER #REM = MORE ROUNDED CORNERS) */
+  border-radius: 2rem; /* (BIGGER #REM = MORE ROUNDED CORNERS) */
   display: grid;
-  grid-template-columns: 0.6fr 0.4fr; /* 🟢 */
+  grid-template-columns: 0.6fr 0.4fr;
   gap: 3rem; /* 3rem; ADD TO LEFT COLUMN SIZE / WILL DECREASE RIGHT COLUMN SIDE */
   justify-content: end;
-  padding: 1rem; /* 🟢 1rem; ??? IDK ??? */
+  padding: 1rem;
+        /* 1rem; ??? IDK ??? */
 }
 
-
+/* BENTO.4 - RIGHT */
 .box__content {
   display: grid;
   place-items: center;
   grid-column: 2; /* 2 */
   min-height: 41cqi; 
-        /* 🟡 40cqi; - ④BOX HEIGHT - BIGGER # = BIGGER IMG SIZE - ON TOP OF TEXT */
+           /* 40cqi; - ④BOX HEIGHT - BIGGER # = BIGGER IMG SIZE - ON TOP OF TEXT */
   padding: 2rem 0rem;  /* 2rem (COLUMN BOTTOM) 0rem (COLUMN RIGHT) */
   align-content: center; /* center */
   jutify-items: start;
@@ -507,7 +532,8 @@ section:nth-of-type(4) {
 
 
 .box p {
-  font-weight: 100; /* 🟡 600 */
+  font-weight: 100;
+            /* 600 */
   color: hsl(0 0% 50%); 
       /* hsl(0 0% 50%); */
       /* PURPLE HSL = hsl(271 100% 60%) */
@@ -515,7 +541,7 @@ section:nth-of-type(4) {
 			/* clamp(0.875rem, 0.5vw + 1rem, 2rem); */
 }
 
-
+/* BENTO.5 - TEXT BOX */
 .box--two {
   position: absolute;
   bottom: 0; 
@@ -535,34 +561,34 @@ section:nth-of-type(4) {
             /* 500; OG */
 }
 
-
+/* TEXT COLOR/GRADIENT */
 .box--two p span {
   background: linear-gradient(90deg, BLACK, GRAY, LIGHTGRAY, GRAY, BLACK);
   color: transparent;
       /* transparent; */
-			/* 🟢STICKY TXT ⑤ */
+			/* STICKY TXT BENTO.5 */
 			/* CAN BE ANY COLOR, HOWEVER, TRANSPARENT = GRADIENT */
 			/* MUST HAVE <span></span> TO WORK */
   -webkit-background-clip: text;
 }
 
 @media (max-width: 768px) { 
-              /* 🟢768 */
+                /* 768 */
   .box--two {
     padding: 2rem 1rem;
           /* 2rem 1rem; */
   }
   .box--two p {
     font-size: clamp(0.875rem, 0.5vw + 1rem, 2rem);
-               /* 🟢(0.875rem, 0.5vw + 1rem, 2rem); */
+                 /* (0.875rem, 0.5vw + 1rem, 2rem); */
   }
 }
 
 @media (min-width: 768px) {
-              /* 🟢768 */
+                /* 768 */
   .box {
     padding: 2rem;
-        /* 🟢2rem; -PADDING FOR ⑤ TEXT BOX */
+          /* 2rem; -PADDING FOR BENTO.6 TEXT BOX */
   }
 }
 
@@ -571,22 +597,22 @@ section:nth-of-type(4) {
   position: relative;
 }
 
-
+/* BENTO.6 */
 section:nth-of-type(5) {
   display: grid;
   gap: 2rem; 
-  /* 🟢2rem - SPACE BETWEEN ⑥ & ⑦ */
+    /* 2rem - SPACE BETWEEN BENTO.6 & BENTO.7 */
   grid-template-columns: 1fr 1fr 1fr 1fr;
                       /* 1fr 1fr 1fr 1fr; */
                       /* 1fr 1fr; - BOX AMOUNT & SIZE */
 /* grid-template-rows: 200px 200px; */
   padding: 4rem 0 20vh 0;
-      /* 🟢4rem 0 20vh 0 */
-      /* ^TOP PADDING 0 BOTTOM PADDING 0 */
+        /* 4rem 0 20vh 0 */
+       /* ^TOP PADDING 0 BOTTOM PADDING 0 */
   transform-style: preserve-3d;
 }
 
-
+/* [XTRA] - MUST HAVE/CANNOT DELETE */
 section:nth-of-type(5)::before {
   content: "";
   z-index: -1;
@@ -605,8 +631,9 @@ section:nth-of-type(5)::before {
                     /* (transparent, WHITE 25%); */
 }
 
+/* BENTO.6 */
 @container (max-width: 420px) { 
-                  /* 🟢420 */
+                    /* 420 */
   section:nth-of-type(5) {
     grid-auto-flow: row;
     /* grid-template-columns: 1fr; */
@@ -614,10 +641,11 @@ section:nth-of-type(5)::before {
   }
   section:nth-of-type(5)::before {
     height: calc(100% + 120cqi);
-           /* 🟢(100% + 120cqi); */
+             /* (100% + 120cqi); */
   }
 }
 
+/* BENTO.7 */
 section:nth-of-type(6) {
   min-height: 8vh; /* 8vh - FIN TEXT SPACE */
   display: grid;
@@ -630,12 +658,13 @@ section:nth-of-type(6) h2 {
                /*  ^ TEXT SIZE */
 }
 
+/* BENTO.6 */
 .bento--mini {
   aspect-ratio: 1;
              /* 1; */
   background: hsl(0 0% 100%);
   border-radius: 2rem; 
-            /* 🟢2 (BIGGER #REM = MORE ROUNDED CORNERS) */
+              /* 2 (BIGGER #REM = MORE ROUNDED CORNERS) */
   overflow: hidden;
   display: grid;
   place-items: center;
@@ -647,12 +676,20 @@ section:nth-of-type(6) h2 {
   font-size: clamp(1rem, 1vw + 1rem, 1rem);
                /* (1.5rem, 2vw + 1rem, 2rem); */
   font-weight: 400;
-          /* 600 -TEXT SIZE */
+            /* 600 -TEXT SIZE */
   color: hsl(0 0% 5%);
   position: relative;
 }
 
 
+
+/* [STYLE] BENTO //END */
+
+/*  */
+/*  */
+/*  */
+
+/* [STYLE] TAG //START */
 
 
 @import url("https://fonts.googleapis.com/css2?family=Honk:wght@400;500;600&display=swap");
@@ -675,8 +712,8 @@ img {
           /* 100% */
 }
 
-/* ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ //CSS 🔖 //START ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ */
-/* ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ❗️ (MUST HAVE THAT ^ line or it won't work) ❗️ ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ */
+<!-- ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ CSS START ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ -->
+/* ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ (MUST HAVE THAT ^ line or it won't work) ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ */
 
 body {
   height: 100vh;
@@ -731,7 +768,7 @@ body {
   .container {
     max-height: none;
     border-radius: 0;
-    height: 62%; /* "FLIPPED 🔃 PANEL SIZE" */
+    height: 62%; /* "FLIPPED PANEL SIZE" */
          /* 100%; */
   }
 }
@@ -874,7 +911,7 @@ body {
   z-index: 3;
 }
 
-/* 🔖 */
+/* TAG */
 .product__img {
   width: 90%;
       /* 100%; */
@@ -966,7 +1003,7 @@ body {
   }
 }
 
-/* 🔖 PANEL: EXPANSION _________________________________________________ 🔖 PANEL: EXPANSION */
+/* TAG PANEL: EXPANSION */
 
 .product--active {
   width: 50%;
@@ -1043,7 +1080,7 @@ body {
   display: flex;
 }
 
-/* 🔖 PANEL: TABLE _________________________________________________________ 🔖 PANEL: TABLE */
+/* TAG PANEL: TABLE */
 .product__table {
   background-color: #08090a;
                  /* #08090a; "Raven" */
@@ -1208,7 +1245,7 @@ body {
           /* scale(1.07); */
 }
 
-/* 🔖 TAG: SWING _____________________________________________________________ 🔖 TAG: SWING */
+/* TAG: SWING */
 
 body {
   background: transparent; 
@@ -1247,7 +1284,7 @@ body {
   }
 }
 
-/* 🔖 A */
+/* TAG A */
 .swingA {
   animation: swing ease-in-out 2.5s infinite alternate;
   transform-origin: center -20px; /* -20px */
@@ -1256,7 +1293,7 @@ body {
 /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); */ 
 }
 
-/* 🔖 B */
+/* TAG B */
 .swingB {
   animation: swing ease-in-out 3.5s infinite alternate;
   transform-origin: center -20px; /* -20px */
@@ -1265,9 +1302,7 @@ body {
 /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); */ 
 }
 
-
-
-/* 🦶🏼 FOOTER _____________________________________________________________ FOOTER 🦶🏼 */
+/* FOOTER */
 
 table {
   border-collapse: separate;
@@ -1301,13 +1336,9 @@ th {
   text-align: left;
 }
 
-/* 🦶🏼 FOOTER _____________________________________________________________ FOOTER 🦶🏼 */
+/* FOOTER */
 
-
-/* 🔴 ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ [STYLE] 🔖 //END ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ 🔴 */
-
-
-
+/* [STYLE] TAG //END */
 
 div.freeShippingRibbon {
   height: 0px;
@@ -1358,7 +1389,5 @@ div.freeShippingRibbon {
   z-index: -1;
         /* -1; */
 }
-
-
 
 </style>
