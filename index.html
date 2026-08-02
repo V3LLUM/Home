@@ -708,12 +708,12 @@ body {
 @media (max-width: 980px) {
   .container {
     max-height: 580px;
-             /* 550px; MAYBE ? */
+             /* 550px; NOT YET */
              /* 500px; TOO small */
              /* 600px; Fits, but still TOO big */
              /* 800px; TOO BIG */
     border-radius: 0;
-    height: 100%; /* "FLIPPED PANEL SIZE" */
+    height: 100%; /* "FLIPPED CONTAINER SIZE" */
          /* 100%; */
   }
 }
@@ -872,6 +872,17 @@ body {
   max-width: 500px;
           /* 500px; */
   transition: 0.3s;
+}
+
+@media (max-width: 980px) {
+  ..product__img {
+    max-height: 400px;
+             /* 400px; */
+             /* 580px; Container size */
+    border-radius: 0;
+    height: 100%; /* "FLIPPED CONTAINER SIZE" */
+         /* 100%; */
+  }
 }
 
 .product__title {
@@ -1775,10 +1786,6 @@ for hand-selected creatives to share their portfolio and network.</small><br>
 		<small>
 		<center>
 		<font size=1><i><-- SWIPE LEFT</i></font>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
