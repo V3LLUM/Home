@@ -411,6 +411,7 @@ main {
 }
 
 /* BENTO.1 _________________________________________________________________________ BENTO.1 */
+/* "SECTION (2)" */
 section {
   container-type: inline-size;
 }
@@ -431,7 +432,7 @@ section:nth-of-type(2) p {
     oklch(90% 0.5 200) 97% 97%
   );
   color: transparent;
-	/* MUST BE ^ TO BE GRADIENT TEXT */
+	   /* MUST BE TRANSPARENT TO BE GRADIENT TEXT */
   -webkit-background-clip: text;
   overflow: visible;
 }
@@ -445,6 +446,7 @@ p {
 }
 
 /* BENTO.3 _________________________________________________________________________ BENTO.3 */
+/* "SECTION (3)" */
 section:nth-of-type(3) h2 {
   font-size: clamp(2rem, 0vw + 0rem, 0rem);
 			     /* (2rem, 8vw + 1rem, 12rem); */
@@ -457,6 +459,7 @@ section:nth-of-type(3) h2 {
 }
 
 /* BENTO.4 - LEFT ___________________________________________________________ BENTO.4 - LEFT */
+/* "SECTION (4)" */
 section:nth-of-type(4) {
   display: grid;
   padding-top: 2rem; /* 2rem; TOP PADDING OF COLUMNS*/
@@ -507,7 +510,6 @@ section:nth-of-type(4) {
     width: 370px;
   }
 }
-
 
 
 /* BENTO.5 - TEXT BOX ___________________________________________________ BENTO.5 - TEXT BOX */
@@ -567,6 +569,7 @@ section:nth-of-type(4) {
 }
 
 /* BENTO.6.0 _____________________________________________________________________ BENTO.6.0 */
+/* "SECTION (5)" */
 section:nth-of-type(5) {
   display: grid;
   gap: 2rem; 
@@ -582,10 +585,13 @@ section:nth-of-type(5) {
 }
 
 /* [XTRA] - MUST HAVE/CANNOT DELETE */
+/* "SECTION (5)" */
 section:nth-of-type(5)::before {
   content: "";
   z-index: -1;
-  background: #F05454; /* transparent */
+  background: PINK;
+           /* #F05454; */ 
+           /* transparent */
   position: absolute;
   bottom: 0; /* 0 */
   height: calc(60% + 60cqi);
@@ -594,8 +600,11 @@ section:nth-of-type(5)::before {
   translate: -50% 0;
   border-radius: 0 0 10vmin 10vmin;
               /* 0 0 10vmin 10vmin; */
+
+/* "PRODUCTS GRID BG GRADIENT COLOR" */
   background: linear-gradient(hsl(232323, 0%, 0%), hsl(333333, 0%, 0%));
-           /* linear-gradient(hsl(333, 61%, 77%), hsl(221, 43%, 41%)); */
+                          /* (hsl(232323, 0%, 0%), hsl(333333, 0%, 0%)); gray/black */
+                          /* (hsl(333, 61%, 77%), hsl(221, 43%, 41%)); pink/blue */
   mask: linear-gradient(transparent, RED 25%);
                     /* (transparent, WHITE 25%); */
 }
@@ -603,11 +612,13 @@ section:nth-of-type(5)::before {
 /* BENTO.6.1 _____________________________________________________________________ BENTO.6.1 */
 @container (max-width: 420px) { 
                     /* 420px */
+/* "SECTION (5)" */
   section:nth-of-type(5) {
     grid-auto-flow: row;
     /* grid-template-columns: 1fr; */
                            /* 1fr; */
   }
+/* "SECTION (5)" */
   section:nth-of-type(5)::before {
     height: calc(100% + 120cqi);
              /* (100% + 120cqi); */
@@ -615,12 +626,15 @@ section:nth-of-type(5)::before {
 }
 
 /* BENTO.7 _________________________________________________________________________ BENTO.7 */
+/* "SECTION (6)" */
 section:nth-of-type(6) {
   min-height: 8vh; 
            /* 8vh - FIN TEXT SPACE */
   display: grid;
   place-items: center;
 }
+
+/* "SECTION (6)" */
 section:nth-of-type(6) h2 {
   font-size: clamp(1.5rem, 0vw + 0rem, 0rem);
                /* (2rem, 3vw + 1rem, 8rem); */
@@ -658,6 +672,7 @@ section:nth-of-type(6) h2 {
   }
 }
 
+/* "SECTION (5)" */
 @media screen and (max-width: 375px) {
   section:nth-of-type(5) {
     grid-template-columns: 1fr 1fr;
@@ -1545,32 +1560,38 @@ div.freeShippingRibbon {
 <!-- -->
 
 <!-- START ============================== [HTML] BENTO ============================== START -->
-
+<!-- "UNDER the WILLIAM+MTN. INTRO" -->
 <main>
+<!-- "SECTION (1)" -->
   <section>
-<div class="bleed-canvas"></div>
+       BENTO START: SECTION
+     <div class="bleed-canvas">BENTO START: DIV Section Bleed Canvas</div>
   </section>
 
-<!-- BENTO.1 ______________________________________________________________________ BENTO.1 -->
-	<section>
-		<!-- <p> SECTION 1 </p> -->
-	</section>
 
-<center>
-TEST
-</center>
+<!-- BENTO.1 ______________________________________________________________________ BENTO.1 -->
+<!-- "SECTION (2)" -->
+  <section>
+       BENTO.1: SECTION
+     <!-- "USE <p></p> for Multi-Chrome Gradient Text" -->
+  </section>
+     <center>BENTO.1: CENTERED TEXT</center>
+
 
 <!-- BENTO.2&3 __________________________________________________________________ BENTO 2&3 -->
+<!-- "SECTION (3)" -->
   	<section>
-		<!-- <center><h1> SECTION 2 </h1></center> -->
-		<!-- <center><h2> SECTION 3 </h2></center> -->
+		<center><h1> BENTO 2 </h1></center>
+		<center><h2> BENTO 3 </h2></center>
   	</section>
 
 <!-- BENTO.4 ______________________________________________________________________ BENTO.4 -->
+<!-- "SECTION (4)" -->
   	<section>
 		<div class="spacing-box">
 		<br><br>
-		<center>
+		<center>			
+	<br>BENTO.4
 			<!-- [M/L] -->
 			<!-- "WITH SKIN IN THE GAME, SEE IT THROUGH." -->
 			<img src="https://img1.wsimg.com/isteam/ip/ce812a0c-e8f2-45a2-98c6-037c71a5fe1e/WSITGSIT%20-%201500x200%20(DropShadow).png/:/rs=w:1440,h:1440" style="width:830px;height:100px">
@@ -1637,6 +1658,7 @@ TEST
 
 <!-- BENTO.5 - STICKY IMG ____________________________________________ BENTO.5 - STICKY IMG -->
     <div class="sticky">
+BENTO.5 STICKY
 		<!-- PHONE SCROLL -->
 		<img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExcHlqdmFheTRvaGVkeWl0OGxiYnoyODU0bThlcjZieW9wdTY2N2IxNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/8LDBd3RfWu8HMBGKZR/giphy.gif">
     </div>
@@ -1646,7 +1668,9 @@ TEST
 <!-- GRADIENT: <p><span></span></p> -->
 
     <div class="box box--two">
+BENTO.5: BOX BOX TWO
       <div class="box__content">
+BENTO.5: BOX CONTENT
 			<!-- BG_OF_SECTION_HERE -->
           <!-- "V3||UMxMEMBERS PHONE SCROLL GIF" -->
 				<img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExeDJsdHRzeHJrbGdod202M3BkYTZzOXhkYzdtaXpxODVrOWlyeXJxZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/AoFc6JVPRQ3Xz1Q8lW/giphy.gif" 
@@ -1671,58 +1695,68 @@ for hand-selected creatives to share their portfolio and network.</small><br>
     </div>
   </section>
 
-<br><br>
-
-
-<section>
-			<!-- [EMBOSSED LABEL] - PRODUCTS -->
-		<center>
-			<img src="https://img1.wsimg.com/isteam/ip/ce812a0c-e8f2-45a2-98c6-037c71a5fe1e/IMG_6746.jpeg/:/rs=w:1440,h:1440" style="width:375px;height:60px;">
-		</center>            
-</section>
-
 
 <!-- START ========================== [HTML] FREEBIE TABS ========================== START -->
+<!-- "SECTION (5)" -->
   <section>
-	
-			<!-- [EMBOSSED LABEL] - PRODUCTS -->
-	<!--
-		<center>
-			<img src="https://img1.wsimg.com/isteam/ip/ce812a0c-e8f2-45a2-98c6-037c71a5fe1e/IMG_6746.jpeg/:/rs=w:1440,h:1440" style="width:900px;height:100px;">
-		</center>            
-	-->
 
 <!-- PRODUCTS&SERVICES -->
+<!--
 <center>
-<font color=green>*</font>
-<font color=green size=+5><b>Products & Services</b></font>
+<font color=white size=+5><b>Products & Services</b></font>
 </center>
+-->
+
+<br><br><br><br>
+	
+	<!-- [EMBOSSED LABEL] - PRODUCTS -->
+		<center>
+			<img src="https://img1.wsimg.com/isteam/ip/ce812a0c-e8f2-45a2-98c6-037c71a5fe1e/IMG_6746.jpeg/:/rs=w:1440,h:1440" style="width:900px;height:100px;">
+		</center>
+		
+		
+<br><br><br><br>
+
+
+<br><br><br>
+
+<center></center>
+<center></center>
+<center></center>
+<center></center>
 
 <!-- * -->
 <center>
-<font color=green>*</font>
-<font color=green size=-2>*</font>
+<font color=red>*</font>
+<font color=red size=-2>*</font>
 </center>
 
 <!-- ** -->
 <center>
-<font color=red>*</font>
-<font color=red size=-2>**</font>
+<font color=orange>*</font>
+<font color=orange size=-2>**</font>
 </center>
 
 <!-- *** -->
-<center>
-<font color=orange>*</font>
-<font color=orange size=-2>***</font>
-</center>
-
 <center>
 <font color=yellow>*</font>
 <font color=yellow size=-2>***</font>
 </center>
 
 
+<!-- **** -->
+<center>
+<font color=green>*</font>
+<font color=green size=-2>****</font>
+</center>
+
+
+
 <!-- BENTO.6.0. BOOK -->
+<!--
+BENTO.6.0 TEST (BOOK)<br>
+-->
+
     <div class="bento--mini">
       <div>
         <a href="www.URL_LINK_HERE.com/">
@@ -1875,9 +1909,18 @@ for hand-selected creatives to share their portfolio and network.</small><br>
 
 
 <!-- START ================================ BENTO.7 ================================ START -->
+<!-- "SECTION (6)" -->
   <section>
     <div class="section__content">
       <br><br>
+
+
+	<!-- [EMBOSSED LABEL] - PRODUCTS -->
+		<center>
+			<img src="https://img1.wsimg.com/isteam/ip/ce812a0c-e8f2-45a2-98c6-037c71a5fe1e/IMG_6746.jpeg/:/rs=w:1440,h:1440" style="width:900px;height:100px;">
+		</center>
+		
+
       <center>
 			<h2>
 				<font color=#F05454 size=+3>
