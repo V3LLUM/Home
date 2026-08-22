@@ -490,12 +490,17 @@ section:nth-of-type(4) {
 }
 
 @media screen and (max-width: 375px) {
-  .box {
-    width: 100%;
-    grid-template-columns: 1fr 1fr;
-    gap: 0rem;
+  .box
+    width: 50%;
+    background: LIME;
+           /* : hsl(0 0% 100%); */
+    border-radius: 2rem; /* (BIGGER #REM = MORE ROUNDED CORNERS) */
+    display: grid;
+    grid-template-columns: 0.1fr 0.1fr;
+    gap: 1rem; /* 3rem; ADD TO LEFT COLUMN SIZE / WILL DECREASE RIGHT COLUMN SIDE */
     justify-content: end;
     padding: 1rem;
+          /* 1rem; ??? IDK ??? */
   }
 }
 
@@ -518,7 +523,7 @@ section:nth-of-type(4) {
     width: 370px;
     display: grid;
     place-items: center;
-    grid-column: 1; /* 2 */
+    grid-column: 2; /* 2 */
     min-height: 40cqi; 
              /* 40cqi; */
              /* BOX HEIGHT. BIGGER # = BIGGER IMG SIZE. ON TOP OF TEXT */
@@ -1726,12 +1731,11 @@ div.freeShippingRibbon {
       <div class="box__content">
       <!-- BENTO.5: BOX CONTENT -->
 
-
-
 			<!-- BG_OF_SECTION_HERE -->
           <!-- [GIF] "V3||UMxMEMBERS LOGO ROULETTE" -->
 				<img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExeDJsdHRzeHJrbGdod202M3BkYTZzOXhkYzdtaXpxODVrOWlyeXJxZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/AoFc6JVPRQ3Xz1Q8lW/giphy.gif" style="width:200px;height:362px;">
 				<!-- margin:0px 80px; -->
+				
 				
           		<!-- <span class="logo"> -->
 <center>
