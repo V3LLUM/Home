@@ -621,7 +621,12 @@ section:nth-of-type(5)::before {
 }
 
 
-
+/* "SECTION (5)" */
+@media screen and (max-width: 375px) {
+  section:nth-of-type(5) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 
 
 /* BENTO.7 _________________________________________________________________________ BENTO.7 */
@@ -673,12 +678,7 @@ section:nth-of-type(6) h2 {
   }
 }
 
-/* "SECTION (5)" */
-@media screen and (max-width: 375px) {
-  section:nth-of-type(5) {
-    grid-template-columns: 1fr 1fr;
-  }
-}
+
 
 
 /* END ================================= [STYLE] BENTO ================================= END */
