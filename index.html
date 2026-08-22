@@ -3,7 +3,7 @@
 body {
   background-color: Wild Sand;
                  /* #f4f4f4; "Wild Sand" */
-  font-family: "Quicksand", "Verdana", "Helvetica", sans-serif;
+  font-family: Quicksand, sans-serif;
   color: #201d1d;
       /* #201d1d; "Warm Black" */
   font-weight: 400;
@@ -250,9 +250,9 @@ main:has(.willem-header.is--loading) {
 }
 
 @font-face {
-  font-family: "Qicksand";
-  src: url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet")
-    /* format("woff2"); */
+  font-family: "PP Neue Montreal";
+  src: url("https://cdn.prod.website-files.com/6819ed8312518f61b84824df/6819ed8312518f61b84825ba_PPNeueMontreal-Medium.woff2")
+    format("woff2");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -276,7 +276,7 @@ main:has(.willem-header.is--loading) {
   margin: 0; /* 0; */
   padding: 0; /* 0; */
   box-sizing: border-box;
-  font-family: "Quicksand", "Verdana", "Helvetica", sans-serif;
+  font-family: "Quicksand", sans-serif;
 			  /* "Syne Mono" */
 }
 
@@ -332,9 +332,7 @@ body {
 section img {
   position: absolute;
   top: 0;
-   /*  0; */
   left: 0;
-     /* 0; */
   width: 100%;
   height: 100%;
   opacity: 90%;
@@ -366,7 +364,7 @@ section img {
 
 body {
   min-height: 100vh; /* 100vh -WILL ADJUST HEADER SIZE*/
-  font-family: "Quicksand", "Verdana", "Helvetica", sans-serif;
+  font-family: Montserrat, Helvetica, Sans-Serif;
 }
 
 /* BENTO.2 _________________________________________________________________________ BENTO.2 */
@@ -456,7 +454,7 @@ section:nth-of-type(3) h2 {
   -webkit-background-clip: text;
 }
 
-/* BENTO.4 - LEFT ___________________________________________________________ BENTO.4 - LEFT */
+/* BENTO.4 - LEFT */
 section:nth-of-type(4) {
   display: grid;
   padding-top: 2rem; /* 2rem; TOP PADDING OF COLUMNS*/
@@ -542,7 +540,7 @@ section:nth-of-type(4) {
 }
 
 @media (max-width: 768px) { 
-                /* 768px */
+                /* 768 */
   .box--two {
     padding: 2rem 1rem;
           /* 2rem 1rem; */
@@ -554,7 +552,7 @@ section:nth-of-type(4) {
 }
 
 @media (min-width: 768px) {
-                /* 768px */
+                /* 768 */
   .box {
     padding: 2rem;
           /* 2rem; -PADDING FOR BENTO.6 TEXT BOX */
@@ -589,7 +587,7 @@ section:nth-of-type(5)::before {
   position: absolute;
   bottom: 0; /* 0 */
   height: calc(60% + 60cqi);
-  width: 100vw; /* 100vw; */
+  width: 100vw; /* 100 */
   left: 50%; /* 50% */
   translate: -50% 0;
   border-radius: 0 0 10vmin 10vmin;
@@ -602,11 +600,11 @@ section:nth-of-type(5)::before {
 
 /* BENTO.6.1 _____________________________________________________________________ BENTO.6.1 */
 @container (max-width: 420px) { 
-                    /* 420px */
+                    /* 420 */
   section:nth-of-type(5) {
     grid-auto-flow: row;
     /* grid-template-columns: 1fr; */
-                           /* 1fr; */
+                        /* 1fr; */
   }
   section:nth-of-type(5)::before {
     height: calc(100% + 120cqi);
@@ -616,8 +614,7 @@ section:nth-of-type(5)::before {
 
 /* BENTO.7 _________________________________________________________________________ BENTO.7 */
 section:nth-of-type(6) {
-  min-height: 8vh; 
-           /* 8vh - FIN TEXT SPACE */
+  min-height: 8vh; /* 8vh - FIN TEXT SPACE */
   display: grid;
   place-items: center;
 }
@@ -646,7 +643,7 @@ section:nth-of-type(6) h2 {
   font-size: clamp(1rem, 1vw + 1rem, 1rem);
                /* (1.5rem, 2vw + 1rem, 2rem); */
   font-weight: 400;
-            /* 600; -TEXT SIZE */
+            /* 600 -TEXT SIZE */
   color: hsl(0 0% 5%);
   position: relative;
 }
@@ -673,12 +670,12 @@ section:nth-of-type(6) h2 {
 
 /* START ========================= [STYLE] MEMBER CONTAINER ========================= START */
 
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Honk:wght@400;500;600&display=swap");
 :root {
   --main-color: ORANGE;
              /* #fc302b; - RED ORANGE */ 
              /* "MEMBER PANEL (BG TOP BORDER LINE) + CART CIRCLE COLOR" */
-  --font: "Quicksand", "Verdana", "Helvetica", sans-serif;
+  --font: "Quicksand", sans-serif;
   --border-color: #08090a; 
                /* #08090a; - "BLACK PEARL" */
 }
@@ -1433,13 +1430,6 @@ div.freeShippingRibbon {
     </head>
 
 
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-
-
-
 <!-- START ========================= [HTML] William Intro ========================= START -->
 
 <section class="willem-header is--loading is--hidden">
@@ -1556,10 +1546,6 @@ div.freeShippingRibbon {
 		<!-- <p> SECTION 1 </p> -->
 	</section>
 
-<center>
-TEST
-</center>
-
 <!-- BENTO.2&3 __________________________________________________________________ BENTO 2&3 -->
   	<section>
 		<!-- <center><h1> SECTION 2 </h1></center> -->
@@ -1570,11 +1556,9 @@ TEST
   	<section>
 		<div class="spacing-box">
 		<br><br>
-		<center>
 			<!-- [M/L] -->
 			<!-- "WITH SKIN IN THE GAME, SEE IT THROUGH." -->
 			<img src="https://img1.wsimg.com/isteam/ip/ce812a0c-e8f2-45a2-98c6-037c71a5fe1e/WSITGSIT%20-%201500x200%20(DropShadow).png/:/rs=w:1440,h:1440" style="width:830px;height:100px">
-			</center>
 		</div>
 <br><br>
 
@@ -1671,57 +1655,37 @@ for hand-selected creatives to share their portfolio and network.</small><br>
     </div>
   </section>
 
-<br><br>
-
-
-
-
 
 <!-- START ========================== [HTML] FREEBIE TABS ========================== START -->
   <section>
-	
-			<!-- [EMBOSSED LABEL] - PRODUCTS -->
-	<!--
 		<center>
-			<img src="https://img1.wsimg.com/isteam/ip/ce812a0c-e8f2-45a2-98c6-037c71a5fe1e/IMG_6746.jpeg/:/rs=w:1440,h:1440" style="width:900px;height:100px;">
-		</center>            
-	-->
-
-<!-- PRODUCTS&SERVICES -->
-<center>
-<font color=green>*</font>
-<font color=green size=+5><b>Products & Services</b></font>
-</center>
-
+			<!-- [EMBOSSED LABEL] - PRODUCTS -->
+<img src="https://img1.wsimg.com/isteam/ip/ce812a0c-e8f2-45a2-98c6-037c71a5fe1e/IMG_6746.jpeg/:/rs=w:1440,h:1440" style="width:900px;height:100px;">
+		</center><br>
+		
 <!-- * -->
 <center>
-<font color=green>*</font>
-<font color=green size=-2>*</font>
+<font color=transparent>*</font>
+<font color=transparent size=-2>*</font>
 </center>
 
 <!-- ** -->
 <center>
-<font color=red>*</font>
-<font color=red size=-2>**</font>
+<font color=transparent>*</font>
+<font color=transparent size=-2>**</font>
 </center>
 
 <!-- *** -->
 <center>
-<font color=orange>*</font>
-<font color=orange size=-2>***</font>
+<font color=transparent>*</font>
+<font color=transparent size=-2>***</font>
 </center>
-
-<center>
-<font color=yellow>*</font>
-<font color=yellow size=-2>***</font>
-</center>
-
 
 <!-- BENTO.6.0. BOOK -->
     <div class="bento--mini">
       <div>
         <a href="www.URL_LINK_HERE.com/">
-			<!-- <span class="logo"></span> -->:)
+			<!-- <span class="logo"></span> -->
         </a>
 
 <!-- BOOK -->
@@ -1868,7 +1832,6 @@ for hand-selected creatives to share their portfolio and network.</small><br>
 
   </section>
 
-
 <!-- START ================================ BENTO.7 ================================ START -->
   <section>
     <div class="section__content">
@@ -1883,7 +1846,6 @@ for hand-selected creatives to share their portfolio and network.</small><br>
 		</center>
     </div>
   </section>
-
 </main>
 
 <!-- DOUBLE ARROW ICON __________________________________________________ DOUBLE ARROW ICON -->
