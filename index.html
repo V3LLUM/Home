@@ -493,6 +493,12 @@ section:nth-of-type(4) {
   justify-items: start;
 }
 
+@media screen and (max-width: 375px) {
+  .box__content {
+    width: 370px;
+  }
+}
+
 .box p {
   font-weight: 100;
             /* 600 */
@@ -591,7 +597,6 @@ section:nth-of-type(5) {
   transform-style: preserve-3d;
 }
 
-
 /* "SECTION (5)" */
 section:nth-of-type(5)::before {
   content: "";
@@ -619,7 +624,6 @@ section:nth-of-type(5)::before {
   mask: linear-gradient(transparent, WHITE 25%);
                     /* (transparent, WHITE 25%); */
 }
-
 
 /* "SECTION (5)" */
 @media screen and (max-width: 375px) {
