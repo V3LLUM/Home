@@ -496,6 +496,15 @@ section:nth-of-type(4) {
 @media screen and (max-width: 375px) {
   .box__content {
     width: 370px;
+  display: grid;
+  place-items: center;
+  grid-column: 2; /* 2 */
+  min-height: 41cqi; 
+           /* 40cqi; - BENTO.4 - BOX HEIGHT - BIGGER # = BIGGER IMG SIZE - ON TOP OF TEXT */
+  padding: 2rem 0rem;  /* 2rem (COLUMN BOTTOM) 0rem (COLUMN RIGHT) */
+  align-content: center; 
+              /* center */
+  justify-items: start;
   }
 }
 
