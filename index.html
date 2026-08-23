@@ -508,25 +508,30 @@ section:nth-of-type(4) {
 }
 
 
-/* BENTO.4 - RIGHT _________________________________________________________ BENTO.4 - RIGHT */
-.box__content {
+/* BENTO.4.1 _____________________________________________________________________ BENTO.4.1 */
+.box__content1 {
   display: grid;
   place-items: center;
-  grid-column: 2; /* 2 */
+  grid-column: 2;
+            /* 2; */
   min-height: 41cqi; 
-           /* 40cqi; - BENTO.4 - BOX HEIGHT - BIGGER # = BIGGER IMG SIZE - ON TOP OF TEXT */
-  padding: 2rem 0rem;  /* 2rem (COLUMN BOTTOM) 0rem (COLUMN RIGHT) */
+           /* 40cqi; */
+           /* BOX HEIGHT. BIGGER # = BIGGER IMG SIZE. ON TOP OF TEXT */
+  padding: 2rem 0rem;
+        /* 2rem 0rem; */
+        /* COLUMN BOTTOM COLUMN RIGHT; */
   align-content: center; 
-              /* center */
+              /* center; */
   justify-items: start;
 }
 
 @media screen and (max-width: 375px) {
-  .box__content {
+  .box__content1 {
     width: 370px;
     display: grid;
     place-items: center;
-    grid-column: 2; /* 2 */
+    grid-column: 2;
+              /* 2; */
     min-height: 40cqi; 
              /* 40cqi; */
              /* BOX HEIGHT. BIGGER # = BIGGER IMG SIZE. ON TOP OF TEXT */
@@ -534,10 +539,50 @@ section:nth-of-type(4) {
           /* 2rem 0rem; */
           /* COLUMN-BOTTOM COLUMN-RIGHT; */
     align-content: center; 
-                /* center */
+                /* center; */
     justify-items: start;
   }
 }
+
+
+/* BENTO.4.2 _____________________________________________________________________ BENTO.4.2 */
+.box__content2 {
+  display: grid;
+  place-items: center;
+  grid-column: 2;
+            /* 2; */
+  min-height: 40cqi; 
+           /* 40cqi; */
+           /* BOX HEIGHT. BIGGER # = BIGGER IMG SIZE. ON TOP OF TEXT */
+  padding: 2rem 0rem;
+        /* 2rem 0rem; */
+        /* COLUMN-BOTTOM COLUMN-RIGHT; */
+  align-content: center; 
+              /* center; */
+  justify-items: start;
+}
+
+@media screen and (max-width: 375px) {
+  .box__content2 {
+    width: 170px; 
+        /* 370px; */
+    display: grid;
+    place-items: center;
+    grid-column: 1; 
+              /* 2; */
+    min-height: 40cqi; 
+             /* 40cqi; */
+             /* BOX HEIGHT. BIGGER # = BIGGER IMG SIZE. ON TOP OF TEXT */
+    padding: 2rem 3rem;  
+          /* 2rem 0rem; */
+          /* COLUMN-BOTTOM COLUMN-RIGHT; */
+    align-content: center; 
+                /* center; */
+    justify-items: start;
+  }
+}
+
+
 
 .box p {
   font-weight: 100;
@@ -616,6 +661,26 @@ section:nth-of-type(4) {
   position: relative; 
          /* relative; */
 }
+
+
+
+.logo_roulette {
+	margin: 0px;
+	/* (All sides)
+	.2 (Top/Bottom, Left/Right)
+	.3 (Top, Left/Right, Bottom)
+	.4 (Top, Right, Bottom, Left). */
+}
+
+@media screen and (max-width: 375px) {
+  .logo_roulette {
+    width: 50%;
+    height: 50%;
+ }
+}
+
+
+
 
 /* BENTO.6.0 _____________________________________________________________________ BENTO.6.0 */
 /* "SECTION (5)" */
@@ -1653,13 +1718,12 @@ div.freeShippingRibbon {
     <div class="box">
 		<!-- [N/L] -->
 
-      <div class="box__content">
+      <div class="box__content1">
 		<!-- [O/L] -->
 
        <!-- BENTO.4 - LEFT COLUMN -->
 		<!-- EMBOSSED INDEX -->
-		<img src="https://img1.wsimg.com/isteam/ip/ce812a0c-e8f2-45a2-98c6-037c71a5fe1e/INDEX%20-%201300x500%20(small).png/:/rs=w:1440,h:1440" style="width:200px;height:600px;">
-		<!-- margin:0px 80px" -->
+		<img src="https://img1.wsimg.com/isteam/ip/ce812a0c-e8f2-45a2-98c6-037c71a5fe1e/INDEX%20-%201300x500%20(small).png/:/rs=w:1440,h:1440" style="width:200px;height:600px;" margin="0px 80px">
 
        <!-- BENTO.4 - RIGHT COLUMN --> 
     <p><!-- BOLD_TITLE_TEXT_HERE / IMGS_WILL_ALIGN_RIGHT --></p>
@@ -1728,18 +1792,27 @@ div.freeShippingRibbon {
 <!-- COLOR: <p></p> -->
 <!-- GRADIENT: <p><span></span></p> -->
 
-    <div class="box box--two">
-    <!-- BENTO.5: BOX BOX TWO -->
 
-      <div class="box__content">
-      <!-- BENTO.5: BOX CONTENT -->
+    <div class="box box--two">
+    <!-- BENTO.5: BOX BOX TWO -->		
+
 
 			<!-- BG_OF_SECTION_HERE -->
+			<div class="logo_roulette">
           <!-- [GIF] "V3||UMxMEMBERS LOGO ROULETTE" -->
-				<img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExeDJsdHRzeHJrbGdod202M3BkYTZzOXhkYzdtaXpxODVrOWlyeXJxZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/AoFc6JVPRQ3Xz1Q8lW/giphy.gif" style="width:200px;height:362px;">
-				<!-- margin:0px 80px; -->
+				<img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExeDJsdHRzeHJrbGdod202M3BkYTZzOXhkYzdtaXpxODVrOWlyeXJxZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/AoFc6JVPRQ3Xz1Q8lW/giphy.gif" style="width:200px;height:362px;margin:0px 70px;">
+				</div>
+
+				
+
+
+		
 				
 				
+				      <div class="box__content2">
+      <!-- BENTO.5: BOX CONTENT -->
+
+
           		<!-- <span class="logo"> -->
 <center>
 <b><font size=+1><p><span>THE FUTURE IS TRANSLUCENT</span></p></font></b>
