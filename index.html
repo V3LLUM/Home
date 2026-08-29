@@ -1,9 +1,9 @@
 <style>
-/* ========== [STYLE] William Intro //START ========== */
+/* START ========================= [STYLE] William Intro ========================= START */
 body {
   background-color: Wild Sand;
                  /* #f4f4f4; "Wild Sand" */
-  font-family: PP Neue Montreal, Arial, sans-serif;
+  font-family: "Quicksand", "Verdana", "Helvetica", sans-serif;
   color: #201d1d;
       /* #201d1d; "Warm Black" */
   font-weight: 400;
@@ -250,21 +250,21 @@ main:has(.willem-header.is--loading) {
 }
 
 @font-face {
-  font-family: "PP Neue Montreal";
-  src: url("https://cdn.prod.website-files.com/6819ed8312518f61b84824df/6819ed8312518f61b84825ba_PPNeueMontreal-Medium.woff2")
-    format("woff2");
+  font-family: "Qicksand";
+  src: url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet")
+    /* format("woff2"); */
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 
-/* ========== [STYLE] William Intro //END ========== */
+/* END ============================ [STYLE] William Intro ============================ END */
 
 /*  */
 /*  */
 /*  */
 
-/* ========== [STYLE] MTN. //START ========== */
+/* START ========================= [STYLE] MTN. LANDING PAGE ========================= START */
 
 /* FONT | QUICKSAND */
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet");
@@ -276,7 +276,7 @@ main:has(.willem-header.is--loading) {
   margin: 0; /* 0; */
   padding: 0; /* 0; */
   box-sizing: border-box;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Quicksand", "Verdana", "Helvetica", sans-serif;
 			  /* "Syne Mono" */
 }
 
@@ -315,7 +315,7 @@ body {
   z-index: 1000;
 }
 
-/* ========== MTN. MAN / OOZE ========== */
+/* MTN. MAN / OOZE _________________________________________________________ MTN. MAN / OOZE */
 #man {
   top: inherit;
   bottom: 0;
@@ -328,11 +328,13 @@ body {
   }
 }
 
-/* ========== MTN. SLIDER ========== */
+/* MTN. SLIDER _________________________________________________________________ MTN. SLIDER */
 section img {
   position: absolute;
   top: 0;
+   /*  0; */
   left: 0;
+     /* 0; */
   width: 100%;
   height: 100%;
   opacity: 90%;
@@ -340,15 +342,21 @@ section img {
   pointer-events: none;
 }
 
-/* ========== MTN. V3||UM TEXT COLOR ========== */
+/* MTN. V3||UM TEXT COLOR ___________________________________________ MTN. V3||UM TEXT COLOR */
 #text {
   position: relative;
   color: transparent; /* WHITE */
   font-size: 7rem; /* 10rem; */
 }
-/* ========== [STYLE] MTN. //END ========== */
+	
 
-/* ========== [STYLE] BENTO //START ========== */
+/* END =========================== [STYLE] MTN. LANDING PAGE =========================== END */
+
+/* */
+/* */
+/* */
+
+/* START ============================== [STYLE] BENTO ============================== START */
 @import "normalize.css";
 *,
 *:after,
@@ -358,10 +366,10 @@ section img {
 
 body {
   min-height: 100vh; /* 100vh -WILL ADJUST HEADER SIZE*/
-  font-family: Montserrat, Helvetica, Sans-Serif;
+  font-family: "Quicksand", "Verdana", "Helvetica", sans-serif;
 }
 
-/* BENTO.2 */
+/* BENTO.2 _________________________________________________________________________ BENTO.2 */
 h1 {
   font-size: clamp(2rem, 0vw + 0rem, 0rem);    
                 /* 2rem, 6vw + 1rem, 8rem */
@@ -381,13 +389,15 @@ main {
   margin: 0 auto;
 }
 
-/* BENTO.3 - STICKY IMG */
+/* BENTO.3 - STICKY IMG _______________________________________________ BENTO.3 - STICKY IMG */
 .sticky {
   width: 50%;
       /* 50 */
-  aspect-ratio: 1;
+  aspect-ratio: 1; 
+             /* 1; */
   position: sticky;
-  bottom: 0; /* 0 */
+  bottom: 0; 
+       /* 0 */
 }
 
 .sticky img {
@@ -402,7 +412,18 @@ main {
 			/* L/R ?*/
 }
 
-/* BENTO.1 */
+@media screen and (max-width: 375px) {
+  .sticky img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    translate: 50% 50; 
+  }
+}
+
+
+/* BENTO.1 _________________________________________________________________________ BENTO.1 */
+/* "SECTION (2)" */
 section {
   container-type: inline-size;
 }
@@ -423,7 +444,7 @@ section:nth-of-type(2) p {
     oklch(90% 0.5 200) 97% 97%
   );
   color: transparent;
-	/* MUST BE ^ TO BE GRADIENT TEXT */
+	   /* MUST BE TRANSPARENT TO BE GRADIENT TEXT */
   -webkit-background-clip: text;
   overflow: visible;
 }
@@ -436,7 +457,8 @@ p {
   position: relative;
 }
 
-/* BENTO.3 */
+/* BENTO.3 _________________________________________________________________________ BENTO.3 */
+/* "SECTION (3)" */
 section:nth-of-type(3) h2 {
   font-size: clamp(2rem, 0vw + 0rem, 0rem);
 			     /* (2rem, 8vw + 1rem, 12rem); */
@@ -448,17 +470,19 @@ section:nth-of-type(3) h2 {
   -webkit-background-clip: text;
 }
 
-/* BENTO.4 - LEFT */
+/* BENTO.4 - LEFT ___________________________________________________________ BENTO.4 - LEFT */
+/* "SECTION (4)" */
 section:nth-of-type(4) {
   display: grid;
   padding-top: 2rem; /* 2rem; TOP PADDING OF COLUMNS*/
   gap: 4rem; /* 4rem; BOTTOM PADDING OF COLUMNS  */
 }
 
-/* BENTO.5 - L.COLUMN */
+/* BENTO.4+5 ______________________________________________________________________ BENTO4+5 */
 .box {
   width: 100%;
-  background: hsl(0 0% 100%);
+  background: PINK;
+         /* : hsl(0 0% 100%); */
   border-radius: 2rem; /* (BIGGER #REM = MORE ROUNDED CORNERS) */
   display: grid;
   grid-template-columns: 0.6fr 0.4fr;
@@ -468,17 +492,97 @@ section:nth-of-type(4) {
         /* 1rem; ??? IDK ??? */
 }
 
-/* BENTO.4 - RIGHT */
-.box__content {
+@media screen and (max-width: 375px) {
+  .box {
+    width: 100%;
+    background: LIME;
+           /* : hsl(0 0% 100%); */
+    border-radius: 2rem; /* (BIGGER #REM = MORE ROUNDED CORNERS) */
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem; /* 3rem; ADD TO LEFT COLUMN SIZE / WILL DECREASE RIGHT COLUMN SIDE */
+    justify-content: right;
+    padding: 1rem;
+          /* 1rem; ??? IDK ??? */
+  }
+}
+
+
+/* BENTO.4.1 _____________________________________________________________________ BENTO.4.1 */
+.box__content1 {
   display: grid;
   place-items: center;
-  grid-column: 2; /* 2 */
+  grid-column: 2;
+            /* 2; */
   min-height: 41cqi; 
-           /* 40cqi; - BENTO.4 - BOX HEIGHT - BIGGER # = BIGGER IMG SIZE - ON TOP OF TEXT */
-  padding: 2rem 0rem;  /* 2rem (COLUMN BOTTOM) 0rem (COLUMN RIGHT) */
-  align-content: center; /* center */
-  jutify-items: start;
+           /* 40cqi; */
+           /* BOX HEIGHT. BIGGER # = BIGGER IMG SIZE. ON TOP OF TEXT */
+  padding: 2rem 0rem;
+        /* 2rem 0rem; */
+        /* COLUMN BOTTOM COLUMN RIGHT; */
+  align-content: center; 
+              /* center; */
+  justify-items: start;
 }
+
+@media screen and (max-width: 375px) {
+  .box__content1 {
+    width: 370px;
+    display: grid;
+    place-items: center;
+    grid-column: 2;
+              /* 2; */
+    min-height: 40cqi; 
+             /* 40cqi; */
+             /* BOX HEIGHT. BIGGER # = BIGGER IMG SIZE. ON TOP OF TEXT */
+    padding: 2rem 3rem;  
+          /* 2rem 0rem; */
+          /* COLUMN-BOTTOM COLUMN-RIGHT; */
+    align-content: center; 
+                /* center; */
+    justify-items: start;
+  }
+}
+
+
+/* BENTO.4.2 _____________________________________________________________________ BENTO.4.2 */
+.box__content2 {
+  display: grid;
+  place-items: center;
+  grid-column: 2;
+            /* 2; */
+  min-height: 40cqi; 
+           /* 40cqi; */
+           /* BOX HEIGHT. BIGGER # = BIGGER IMG SIZE. ON TOP OF TEXT */
+  padding: 2rem 0rem;
+        /* 2rem 0rem; */
+        /* COLUMN-BOTTOM COLUMN-RIGHT; */
+  align-content: center; 
+              /* center; */
+  justify-items: start;
+}
+
+@media screen and (max-width: 375px) {
+  .box__content2 {
+    width: 170px; 
+        /* 370px; */
+    display: grid;
+    place-items: center;
+    grid-column: 1; 
+              /* 2; */
+    min-height: 40cqi; 
+             /* 40cqi; */
+             /* BOX HEIGHT. BIGGER # = BIGGER IMG SIZE. ON TOP OF TEXT */
+    padding: 2rem 3rem;  
+          /* 2rem 0rem; */
+          /* COLUMN-BOTTOM COLUMN-RIGHT; */
+    align-content: center; 
+                /* center; */
+    justify-items: start;
+  }
+}
+
+
 
 .box p {
   font-weight: 100;
@@ -490,7 +594,18 @@ section:nth-of-type(4) {
 			/* clamp(0.875rem, 0.5vw + 1rem, 2rem); */
 }
 
-/* BENTO.5 - TEXT BOX */
+.spacing-box {
+   height: 1vh;
+	}
+
+@media screen and (max-width: 375px) {
+  .spacing-box {
+    width: 370px;
+  }
+}
+
+
+/* BENTO.5 - TEXT BOX ___________________________________________________ BENTO.5 - TEXT BOX */
 .box--two {
   position: absolute;
   bottom: 0; 
@@ -522,7 +637,7 @@ section:nth-of-type(4) {
 }
 
 @media (max-width: 768px) { 
-                /* 768 */
+                /* 768px */
   .box--two {
     padding: 2rem 1rem;
           /* 2rem 1rem; */
@@ -534,7 +649,7 @@ section:nth-of-type(4) {
 }
 
 @media (min-width: 768px) {
-                /* 768 */
+                /* 768px */
   .box {
     padding: 2rem;
           /* 2rem; -PADDING FOR BENTO.6 TEXT BOX */
@@ -543,63 +658,96 @@ section:nth-of-type(4) {
 
 section:nth-of-type(4) {
   z-index: 2;
-  position: relative;
+  position: relative; 
+         /* relative; */
 }
 
-/* BENTO.6 */
+
+
+.logo_roulette {
+	margin: 0px;
+	/* (All sides)
+	.2 (Top/Bottom, Left/Right)
+	.3 (Top, Left/Right, Bottom)
+	.4 (Top, Right, Bottom, Left). */
+}
+
+@media screen and (max-width: 375px) {
+  .logo_roulette img {
+    width: 50%;
+    height: 50%;
+ }
+}
+
+
+
+
+/* BENTO.6.0 _____________________________________________________________________ BENTO.6.0 */
+/* "SECTION (5)" */
 section:nth-of-type(5) {
   display: grid;
   gap: 2rem; 
     /* 2rem - SPACE BETWEEN BENTO.6 & BENTO.7 */
+/* "HOW MANY COLUMNS" */
   grid-template-columns: 1fr 1fr 1fr 1fr;
                       /* 1fr 1fr 1fr 1fr; */
                       /* 1fr 1fr; - BOX AMOUNT & SIZE */
-/* grid-template-rows: 200px 200px; */
+  grid-auto-flow: row;
+/* "HOW MUCH SPACE BETWEEN ROWS" */
+  grid-template-rows: 200px 200px;
+                   /* 200px 200px; */
   padding: 4rem 0 20vh 0;
         /* 4rem 0 20vh 0 */
        /* ^TOP PADDING 0 BOTTOM PADDING 0 */
   transform-style: preserve-3d;
 }
 
-/* [XTRA] - MUST HAVE/CANNOT DELETE */
+/* "SECTION (5)" */
 section:nth-of-type(5)::before {
   content: "";
   z-index: -1;
-  background: #F05454; /* transparent */
+  background: PINK;
+           /* #F05454; */ 
+           /* transparent */
   position: absolute;
+         /* absolute; */
+/* "PRODUCTS GRID (BACKGROUND SIZE)" */
   bottom: 0; /* 0 */
-  height: calc(60% + 60cqi);
-  width: 100vw; /* 100 */
+  height: calc(40% + 40cqi);
+           /* (60% + 60cqi); */
+  width: 100vw; /* 100vw; */
+/* "PRODUCTS GRID (BACKGROUND ALIGNMENT)" */
   left: 50%; /* 50% */
   translate: -50% 0;
+          /* -50% 0; */
   border-radius: 0 0 10vmin 10vmin;
               /* 0 0 10vmin 10vmin; */
+/* "PRODUCTS GRID (BG GRADIENT COLOR(" */
   background: linear-gradient(hsl(232323, 0%, 0%), hsl(333333, 0%, 0%));
-           /* linear-gradient(hsl(333, 61%, 77%), hsl(221, 43%, 41%)); */
-  mask: linear-gradient(transparent, RED 25%);
+                          /* (hsl(232323, 0%, 0%), hsl(333333, 0%, 0%)); gray/black */
+                          /* (hsl(333, 61%, 77%), hsl(221, 43%, 41%)); pink/blue */
+  mask: linear-gradient(transparent, WHITE 25%);
                     /* (transparent, WHITE 25%); */
 }
 
-/* BENTO.6 */
-@container (max-width: 420px) { 
-                    /* 420 */
+/* "SECTION (5)" */
+@media screen and (max-width: 375px) {
   section:nth-of-type(5) {
-    grid-auto-flow: row;
-    /* grid-template-columns: 1fr; */
-                        /* 1fr; */
-  }
-  section:nth-of-type(5)::before {
-    height: calc(100% + 120cqi);
-             /* (100% + 120cqi); */
+    grid-template-columns: 1fr 1fr;
   }
 }
 
-/* BENTO.7 */
+
+/* BENTO.7 _________________________________________________________________________ BENTO.7 */
+/* "SECTION (6)" */
 section:nth-of-type(6) {
-  min-height: 8vh; /* 8vh - FIN TEXT SPACE */
+  min-height: 8vh; 
+           /* 8vh - FIN TEXT SPACE */
   display: grid;
   place-items: center;
 }
+
+/* "SECTION (6)" */
 section:nth-of-type(6) h2 {
   font-size: clamp(1.5rem, 0vw + 0rem, 0rem);
                /* (2rem, 3vw + 1rem, 8rem); */
@@ -607,7 +755,8 @@ section:nth-of-type(6) h2 {
                /*  ^ TEXT SIZE */
 }
 
-/* BENTO.6 */
+
+/* BENTO.6.2 _____________________________________________________________________ BENTO.6.2 */
 .bento--mini {
   aspect-ratio: 1;
              /* 1; */
@@ -617,7 +766,7 @@ section:nth-of-type(6) h2 {
   overflow: hidden;
   display: grid;
   place-items: center;
-  position: relative;
+  position: relative; /* relative; */
 }
 
 .bento--mini a {
@@ -625,25 +774,36 @@ section:nth-of-type(6) h2 {
   font-size: clamp(1rem, 1vw + 1rem, 1rem);
                /* (1.5rem, 2vw + 1rem, 2rem); */
   font-weight: 400;
-            /* 600 -TEXT SIZE */
+            /* 600; -TEXT SIZE */
   color: hsl(0 0% 5%);
-  position: relative;
+  position: center; /* relative; */
 }
 
-/* ========== [STYLE] BENTO //END ========== */
+
+@media {
+  .bento--mini {
+    border-radius: 1rem;
+                /*(BIGGER #REM = MORE ROUNDED CORNERS) */
+  }
+}
+
+
+
+
+/* END ================================= [STYLE] BENTO ================================= END */
 
 /*  */
 /*  */
 /*  */
 
-/* ========== [STYLE] TAG //START ========== */
+/* START ========================= [STYLE] MEMBER CONTAINER ========================= START */
 
-@import url("https://fonts.googleapis.com/css2?family=Honk:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 :root {
   --main-color: ORANGE;
              /* #fc302b; - RED ORANGE */ 
              /* "MEMBER PANEL (BG TOP BORDER LINE) + CART CIRCLE COLOR" */
-  --font: "Quicksand", sans-serif;
+  --font: "Quicksand", "Verdana", "Helvetica", sans-serif;
   --border-color: #08090a; 
                /* #08090a; - "BLACK PEARL" */
 }
@@ -858,7 +1018,7 @@ body {
   z-index: 3;
 }
 
-/* ========== TAG ========== */
+/* TAG _________________________________________________________________________________ TAG */
 .product__img {
   width: 90%;
       /* 100%; */
@@ -961,7 +1121,7 @@ body {
   }
 }
 
-/* ========== TAG PANEL: EXPANSION ========== */
+/* TAG PANEL: EXPANSION _______________________________________________ TAG PANEL: EXPANSION */
 
 .product--active {
   width: 50%;
@@ -1038,7 +1198,7 @@ body {
   display: flex;
 }
 
-/* ========== TAG PANEL: TABLE ========== */
+/* TAG PANEL: TABLE _______________________________________________________ TAG PANEL: TABLE */
 .product__table {
   background-color: #08090a;
                  /* #08090a; "Raven" */
@@ -1203,7 +1363,7 @@ body {
           /* scale(1.07); */
 }
 
-/* ========== TAG: SWING ========== */
+/* TAG: SWING ___________________________________________________________________ TAG: SWING */
 
 body {
   background: transparent; 
@@ -1216,7 +1376,7 @@ body {
   transform-origin: center -20px;
   float: left;
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
-/* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); */ 
+           /* 5px 5px 10px rgba(0, 0, 0, 0.5); */ 
 }
 
 .swing:hover {
@@ -1242,7 +1402,7 @@ body {
   }
 }
 
-/* ========== TAG A ========== */
+/* TAG A (SWING) _____________________________________________________________ TAG A (SWING) */
 .swingA {
   animation: swing ease-in-out 2.5s infinite alternate;
   transform-origin: center -20px; /* -20px */
@@ -1251,7 +1411,7 @@ body {
 /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); */ 
 }
 
-/* ========== TAG B ========== */
+/* TAG B (SWING B) _________________________________________________________ TAG B (SWING B) */
 .swingB {
   animation: swing ease-in-out 3.5s infinite alternate;
   transform-origin: center -20px; /* -20px */
@@ -1260,7 +1420,13 @@ body {
 /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); */ 
 }
 
-/* ========== FOOTER ========== */
+/* END =========================== [STYLE] MEMBER CONTAINER =========================== END */
+
+/* */
+/* */
+/* */
+
+/* START ============================== [STYLE] FOOTER ============================== START */
 
 table {
   border-collapse: separate;
@@ -1294,9 +1460,20 @@ th {
   text-align: left;
 }
 
-/* ========== FOOTER ========== */
+@media (max-width: 375px) {
+  .left {
+    max-width: 360px;
+    width: 100%; /* "FLIPPED .left SIZE" */
+        /* 100%; */
+  }
+}
 
-/* ========== [STYLE] TAG //END ========== */
+
+/* END =================================== FOOTER =================================== END */
+
+
+
+/* START ============================= [STYLE] SHIPPING ============================= START */
 
 div.freeShippingRibbon {
   height: 0px;
@@ -1343,12 +1520,28 @@ div.freeShippingRibbon {
   border-bottom-color: #F05454;
                     /* #9c1b21; */
   top: 0px;
-    /* -2px; */
+   /* -2px; */
   z-index: -1;
         /* -1; */
 }
 
+/* END =============================== [STYLE] SHIPPING =============================== END */
+
+/* */
+/* */
+/* */
+
 </style>
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1365,7 +1558,14 @@ div.freeShippingRibbon {
     </head>
 
 
-<!-- ========== [HTML] William Intro //START ========== -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+
+
+<!-- START ========================= [HTML] William Intro ========================= START -->
 
 <section class="willem-header is--loading is--hidden">
   <div class="willem-loader">
@@ -1382,7 +1582,7 @@ div.freeShippingRibbon {
           <div class="willem__growing-image">
             <div class="willem__growing-image-wrap">
 
-<!-- ========== [HTML] MTN. //START ========== -->
+<!-- START ============================== [HTML] MTN. ============================== START -->
 
 <section id="top">
 
@@ -1410,7 +1610,7 @@ div.freeShippingRibbon {
 
 	</section>	
 
-<!-- ========== [HTML] MTN. //END ========== -->
+<!-- END ============================== [HTML] MTN. ============================== END -->
 
             </div>
           </div>
@@ -1435,22 +1635,22 @@ div.freeShippingRibbon {
 
         <div class="willem-nav__start">
           <a href="" target="_blank" class="willem-nav__link">
-<!-- ========== ABOUT ========== -->
-<img src="https://img1.wsimg.com/isteam/ip/ce812a0c-e8f2-45a2-98c6-037c71a5fe1e/About%20441%C3%97100.JPG/:/rs=w:1440,h:1440"><b>ABOUTABOUT</b></a>
+<!-- ABOUT __________________________________________________________________________ ABOUT -->
+<img src="https://img1.wsimg.com/isteam/ip/ce812a0c-e8f2-45a2-98c6-037c71a5fe1e/About%20441%C3%97100.JPG/:/rs=w:1440,h:1440"><b>ABOUT</b></a>
         </div>
 
         <div class="willem-nav__end">
 
           <div class="willem-nav__links">
             <a href="" target="_blank" class="willem-nav__link">
-<!-- ========== INVENTORY ========== -->
-<img src="https://img1.wsimg.com/isteam/ip/ce812a0c-e8f2-45a2-98c6-037c71a5fe1e/Inventory%20693%C3%97100.JPG/:/rs=w:1440,h:1440"><b>INVENTORYINVENTORY</b></a>
+<!-- INVENTORY __________________________________________________________________ INVENTORY -->
+<img src="https://img1.wsimg.com/isteam/ip/ce812a0c-e8f2-45a2-98c6-037c71a5fe1e/Inventory%20693%C3%97100.JPG/:/rs=w:1440,h:1440"><b>INVENTORY</b></a>
           </div>
 
           <div class="willem-nav__cta">
             <a href="" target="_blank" class="willem-nav__link">
-<!-- ========== CONTACT ========== -->
-<img src="https://img1.wsimg.com/isteam/ip/ce812a0c-e8f2-45a2-98c6-037c71a5fe1e/Contact%20567%C3%97100.JPG/:/rs=w:1440,h:1440"><b>CONTACTCONTACT</b></a>
+<!-- CONTACT ______________________________________________________________________ CONTACT -->
+<img src="https://img1.wsimg.com/isteam/ip/ce812a0c-e8f2-45a2-98c6-037c71a5fe1e/Contact%20567%C3%97100.JPG/:/rs=w:1440,h:1440"><b>CONTACT</b></a>
           </div>
 		 </div>
       </nav>
@@ -1463,48 +1663,67 @@ div.freeShippingRibbon {
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
 
 
-<!-- ========== [HTML] William Intro //END ========== -->
+<!-- END ============================ [HTML] William Intro ============================ END -->
 
 <!-- -->
 <!-- -->
 <!-- -->
 
-<!-- ========== [HTML] BENTO //START ========== -->
-
+<!-- START ============================== [HTML] BENTO ============================== START -->
+<!-- "UNDER the WILLIAM+MTN. INTRO" -->
 <main>
+<!-- "SECTION (1)" -->
   <section>
-<div class="bleed-canvas"></div>
+       <!-- BENTO START: SECTION -->
+		<!-- <div class="bleed-canvas">BENTO START: DIV Section Bleed Canvas</div> -->
   </section>
 
-<!-- BENTO.1 -->
-	<section>
-		<!-- <p> SECTION 1 </p> -->
-	</section>
 
-<!-- BENTO.2 & 3 -->
+<!-- BENTO.1 ______________________________________________________________________ BENTO.1 -->
+<!-- "SECTION (2)" -->
+  <section>
+		<!-- BENTO.1: SECTION -->
+		<!-- "USE <p></p> for Multi-Chrome Gradient Text" -->
+  </section>
+		<!-- <center>BENTO.1: CENTERED TEXT</center> -->
+
+
+<!-- BENTO.2&3 __________________________________________________________________ BENTO 2&3 -->
+<!-- "SECTION (3)" -->
   	<section>
-		<!-- <center><h1> SECTION 2 </h1></center> -->
-		<!-- <center><h2> SECTION 3 </h2></center> -->
+		<!--
+		<center><h1> BENTO 2 </h1></center>
+		<center><h2> BENTO 3 </h2></center>
+		-->
   	</section>
 
-<!-- BENTO.4 -->
+
+<!-- BENTO.4 ______________________________________________________________________ BENTO.4 -->
+<!-- "SECTION (4)" -->
   	<section>
-		<div class="spacing-box"></div>
+
+		<div class="spacing-box">
 		<br><br>
+		<center>			
+		<br>
+			<!-- BENTO.4 -->
 			<!-- [M/L] -->
 			<!-- "WITH SKIN IN THE GAME, SEE IT THROUGH." -->
 			<img src="https://img1.wsimg.com/isteam/ip/ce812a0c-e8f2-45a2-98c6-037c71a5fe1e/WSITGSIT%20-%201500x200%20(DropShadow).png/:/rs=w:1440,h:1440" style="width:830px;height:100px">
-<br><br>
+			</center>
+		</div>
+
+<br><br><br><br><br><br><br><br><br><br>
 
     <div class="box">
 		<!-- [N/L] -->
 
-      <div class="box__content">
+      <div class="box__content1">
 		<!-- [O/L] -->
 
        <!-- BENTO.4 - LEFT COLUMN -->
 		<!-- EMBOSSED INDEX -->
-		<img src="https://img1.wsimg.com/isteam/ip/ce812a0c-e8f2-45a2-98c6-037c71a5fe1e/INDEX%20-%201300x500%20(small).png/:/rs=w:1440,h:1440" style="width:200px;height:600px;margin:0px 80px">
+		<img src="https://img1.wsimg.com/isteam/ip/ce812a0c-e8f2-45a2-98c6-037c71a5fe1e/INDEX%20-%201300x500%20(small).png/:/rs=w:1440,h:1440" style="width:200px;height:600px;" margin="0px 80px">
 
        <!-- BENTO.4 - RIGHT COLUMN --> 
     <p><!-- BOLD_TITLE_TEXT_HERE / IMGS_WILL_ALIGN_RIGHT --></p>
@@ -1520,19 +1739,26 @@ div.freeShippingRibbon {
 		<br>
 			A digital community<br>
 		   as beautiful and translucent<br>
-		   as the ancient material that inspired it.<br>
+		   as the ancient material<br>
+		   that inspired it.<br>
 		<br>
-			Historically, vellum carried the weight<br>
-			of kings' signatures, sacred texts,<br>
+			Historically,<br>
+			vellum carried the weight<br>
+			of kings' signatures,<br>
+			sacred texts,<br>
 			and stories meant to endure.<br>
 		<br>
 			It was strong, but soft.<br>
 			Precious, yet practical.<br>
 		<br>
-			<i>V3||UM isn't just another platform.</i><br>
+			<i>V3||UM<br>
+			isn't just another platform.</i><br>
 		<br>
-			In an age of automated generics & fleeting interactions,<br>
-			we desired something more unique and interpersonal.<br>
+			In an age<br>
+			of automated generics<br>
+			& fleeting interactions,<br>
+			we desired something more<br>
+			unique and interpersonal.<br>
 		<br>
 			Layering dreams with strategy,<br>
 			passion with purpose,<br>
@@ -1553,22 +1779,40 @@ div.freeShippingRibbon {
       </div>
     </div>
 
-<!-- BENTO.5 - STICKY IMG -->
+
+<!-- BENTO.5 - STICKY IMG ____________________________________________ BENTO.5 - STICKY IMG -->
     <div class="sticky">
-		<!-- PHONE SCROLL -->
+    <!-- BENTO.5 STICKY -->
+
+		<!-- [GIF] "TRANSPARENT PHONE SCROLL" -->
 		<img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExcHlqdmFheTRvaGVkeWl0OGxiYnoyODU0bThlcjZieW9wdTY2N2IxNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/8LDBd3RfWu8HMBGKZR/giphy.gif">
     </div>
 
-<!-- BENTO.5 -->
+<!-- BENTO.5 ______________________________________________________________________ BENTO.5 -->
 <!-- COLOR: <p></p> -->
 <!-- GRADIENT: <p><span></span></p> -->
 
+
     <div class="box box--two">
-      <div class="box__content">
+    <!-- BENTO.5: BOX BOX TWO -->		
+
+
 			<!-- BG_OF_SECTION_HERE -->
-          <!-- "V3||UMxMEMBERS PHONE SCROLL GIF" -->
-				<img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExeDJsdHRzeHJrbGdod202M3BkYTZzOXhkYzdtaXpxODVrOWlyeXJxZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/AoFc6JVPRQ3Xz1Q8lW/giphy.gif" 
-				style="width:200px;height:362px;margin:0px 80px;">
+			<div class="logo_roulette">
+          <!-- [GIF] "V3||UMxMEMBERS LOGO ROULETTE" -->
+				<img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExeDJsdHRzeHJrbGdod202M3BkYTZzOXhkYzdtaXpxODVrOWlyeXJxZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/AoFc6JVPRQ3Xz1Q8lW/giphy.gif" style="width:200px;height:362px;margin:0px 70px;">
+				</div>
+
+				
+
+
+		
+				
+				
+				      <div class="box__content2">
+      <!-- BENTO.5: BOX CONTENT -->
+
+
           		<!-- <span class="logo"> -->
 <center>
 <b><font size=+1><p><span>THE FUTURE IS TRANSLUCENT</span></p></font></b>
@@ -1585,35 +1829,29 @@ for hand-selected creatives to share their portfolio and network.</small><br>
 				B E <!-- SPACE_HOLDER --> &nbsp; <!-- SPACE_HOLDER --> S E E N<br>
 				<!-- <p>P_COLOR_TEST<br> -->			   <!-- <span>SPAN_COLOR_TEST</span> -->
 					<!-- </span> -->
+
       </div>
     </div>
   </section>
 
 
-<!-- ========== FREEBIE TABS ========== -->
-  <section>
+
+<hr>
+
+<!-- START ========================== [HTML] PRODUCT TABS ========================== START -->
+
+
+<br><br><br><br><br>
+<br><br><br><br><br>
+
+
+<!-- [EMBOSSED LABEL] - PRODUCTS AND SERVICES -->
 		<center>
-			<!-- [EMBOSSED LABEL] - PRODUCTS -->
-<img src="https://img1.wsimg.com/isteam/ip/ce812a0c-e8f2-45a2-98c6-037c71a5fe1e/IMG_6746.jpeg/:/rs=w:1440,h:1440" style="width:900px;height:100px;">
+	<img src="https://img1.wsimg.com/isteam/ip/ce812a0c-e8f2-45a2-98c6-037c71a5fe1e/IMG_6965.png/:/rs=w:1440,h:1440"">
 		</center>
-		
-<!-- * -->
-<center>
-<font color=#F05454>*</font>
-<font color=white size=-2>*</font>
-</center>
-
-<!-- ** -->
-<center>
-<font color=#F05454>*</font>
-<font color=white size=-2>**</font>
-</center>
-
-<!-- *** -->
-<center>
-<font color=#F05454>*</font>
-<font color=white size=-2>***</font>
-</center>
+						
+<!-- "SECTION (5)" -->			
+  <section>
 
 <!-- BENTO.6.0. BOOK -->
     <div class="bento--mini">
@@ -1627,6 +1865,7 @@ for hand-selected creatives to share their portfolio and network.</small><br>
       </div>
     </div>
 
+
 <!-- BENTO.6.0. CARDS -->
     <div class="bento--mini">
       <div>
@@ -1639,7 +1878,8 @@ for hand-selected creatives to share their portfolio and network.</small><br>
       </div>
     </div>
 
-<!-- BENTO.6.0. -->
+
+<!-- BENTO.6.0. NOTEBOOK-->
     <div class="bento--mini">
       <div>
         <a href="www.URL_LINK_HERE.com/">
@@ -1762,10 +2002,12 @@ for hand-selected creatives to share their portfolio and network.</small><br>
 <font color=white size=-2>Terms & conditions may apply.</font>
 </center>
 
-<!-- ========== FREEBIE TABS ========== -->
+<!-- END ============================ [HTML] FREEBIE TABS ============================ END -->
+
   </section>
 
-<!-- ========== BENTO.7 ========== -->
+
+<!-- START ================================ BENTO.7 ================================ START -->
   <section>
     <div class="section__content">
       <br><br>
@@ -1779,30 +2021,14 @@ for hand-selected creatives to share their portfolio and network.</small><br>
 		</center>
     </div>
   </section>
+
 </main>
 
-<!-- ========== DOUBLE ARROW ICON ========== -->
+<!-- DOUBLE ARROW ICON __________________________________________________ DOUBLE ARROW ICON -->
 	<center>
 		<small>
 		<center>
 		<font size=1><i><-- SWIPE LEFT</i></font>
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -1811,13 +2037,13 @@ for hand-selected creatives to share their portfolio and network.</small><br>
 		</small>
 	</center>
 
-<!-- ========== [HTML] BENTO //END ========== -->
+<!-- END ============================== [HTML] BENTO.7 ============================== END -->
 
 <!-- -->
 <!-- -->
 <!-- -->
 
-<!-- ========== [HTML] TAG //START ========== -->
+<!-- START ============================== [HTML] TAGS ============================== START -->
 
 <div class="container">
   <div class="nav">
@@ -1847,7 +2073,7 @@ for hand-selected creatives to share their portfolio and network.</small><br>
   <div class="product" data-index="0">
     <div class="product__close">Close</div>
 
-<!-- ========== TAG PANEL - E4B ========== -->
+<!-- TAG PANEL - E4B ______________________________________________________ TAG PANEL - E4B -->
 
     <div class="product__new">
 <!-- TAG E4B - EMBOSSED LABEL -->
@@ -1895,7 +2121,7 @@ FB</div>
 <!-- -->
 <!-- -->
 
-<!-- ========== TAG PANEL - PLUGZ START ========== -->
+<!-- TAG PANEL - PLUGZ __________________________________________________ TAG PANEL - PLUGZ -->
 
     <div class="product__new">
 <!-- TAG - PLUGZ EMBOSSED LABEL -->
@@ -2000,13 +2226,11 @@ FB</div>
   <div class="product" data-index="2">
     <div class="product__close">Close</div>
 
-<!-- ========== TAG PANEL - PLUGZ END ========== -->
-
 <!-- -->
 <!-- -->
 <!-- -->
 
-<!-- ========== TAG PANEL - TAR START ========== -->
+<!-- TAG PANEL - TAR ______________________________________________________ TAG PANEL - TAR -->
 
     <div class="product__new">
 <!-- TAG TAR - EMBOSSED LABEL -->
@@ -2087,13 +2311,11 @@ FB</div>
   <div class="product" data-index="3">
     <div class="product__close">Close</div>
 
-<!-- ========== TAG PANEL - TAR STOP ========== -->
-
 <!-- -->
 <!-- -->
 <!-- -->
 
-<!-- ========== TAG PANEL - GFH START ========== -->
+<!-- TAG PANEL - GFH ______________________________________________________ TAG PANEL - GFH -->
 
     <div class="product__new">
 <!-- TAG GFH - EMBOSSED LABEL -->
@@ -2171,13 +2393,11 @@ FB</div>
   <div class="product" data-index="4">
     <div class="product__close">Close</div>
 
-<!-- ========== TAG PANEL - GFH STOP ========== -->
-
 <!-- -->
 <!-- -->
 <!-- -->
 
-<!-- ========== TAG PANEL - IMPULSE START ========== -->
+<!-- TAG PANEL - IMPULSE _____________________________________________ TAG PANEL - IMPULSE  -->
 
     <div class="product__new">
 <!-- TAG IMPULSE - EMBOSSED LABEL -->
@@ -2254,13 +2474,11 @@ FB</div>
   <div class="product" data-index="5">
     <div class="product__close">Close</div>
 
-<!-- ========== TAG PANEL - IMPULSE STOP ========== -->
-
 <!-- -->
 <!-- -->
 <!-- -->
 
-<!-- ========== TAG PANEL - JV INTNL START ========== -->
+<!-- TAG PANEL - JV INTNL ____________________________________________ TAG PANEL - JV INTNL -->
 
     <div class="product__new">
 <!-- TAG JV INTNL - EMBOSSED LABEL -->
@@ -2336,13 +2554,11 @@ FB</div>
   <div class="product" data-index="6">
     <div class="product__close">Close</div>
 
-<!-- ========== TAG PANEL - JV INTNL STOP ========== -->
-
 <!-- -->
 <!-- -->
 <!-- -->
 
-<!-- ========== TAG PANEL - RESERVED START ========== -->
+<!-- TAG PANEL - RESERVED ____________________________________________ TAG PANEL - RESERVED -->
 
     <div class="product__new">
 <!-- TAG RESERVED - EMBOSSED LABEL -->
@@ -2419,13 +2635,11 @@ FB</div>
   <div class="product" data-index="7">
     <div class="product__close">Close</div>
 
-<!-- ========== TAG PANEL - RESERVED STOP ========== -->
-
 <!-- -->
 <!-- -->
 <!-- -->
 
-<!-- ========== TAG PANEL - LAST START ========== -->
+<!-- TAG PANEL - LAST TAG ____________________________________________________ PANEL - LAST -->
 
     <div class="product__new">
 <!-- BECOME A MEMBER EMBOSSED LABEL -->
@@ -2490,8 +2704,17 @@ LAST.L SUBTITLE EXPANDED 0.5</div>
     <div class="product__detail">VIEW DETAILS</div>
   </div>
 
+<!-- END _________________________ TAG PANEL - LAST TAG ______________________________ END -->
+
+<!-- -->
+<!-- -->
+<!-- -->
+
 </div> <!-- USE TO CLOSE OFF MEMBER GALLERY -->
 
+<!-- -->
+<!-- -->
+<!-- -->
 
 <!-- USE TO ADD+ ANTHER PANEL -->
 <!--
@@ -2504,30 +2727,54 @@ LAST.L SUBTITLE EXPANDED 0.5</div>
 <!-- -->
 <!-- -->
 
-<!-- ========== TAG PANEL - LAST STOP ========== -->
-
 <!-- MUST STAY FOR EXPANSION TO WORK -->
 	<div class="product__overlay">/div>
 
 	</div>
 
-<!-- ========== STOP [HTML] TAG //END ========== -->
+<!-- END ================================ [HTML] TAGS ================================ END -->
 
 <!-- -->
 <!-- -->
 <!-- -->
-
-<!-- ========== START [HTML] FOOTER //START ========== -->
 
 <center>
-<br><br>
+<br>
+<br>
 
+
+<!-- MARQUEE ______________________________________________________________________ MARQUEE -->
+
+<!--
+<marquee 
+  width="100%" 
+  height="50px" 
+  bgcolor="#F05454" 
+  style="color: WHITE; font-size: 20px; line-height: 60px;">
+</marquee>
+-->
+
+<!-- BECOME A MEMBER EMBOSSED LABEL -->
+<!--
+<img src="https://img1.wsimg.com/isteam/ip/ce812a0c-e8f2-45a2-98c6-037c71a5fe1e/IMG_6782.png/:/rs=w:1440,h:1440" style="width:300px;height:30px;">
+-->
+
+
+
+<!-- START ======================== BECOME A MEMBER / TIERS ======================== START -->
+
+<!-- BLANK D.PINK LABEL -->
+<!--
 <img src="https://img1.wsimg.com/isteam/ip/ce812a0c-e8f2-45a2-98c6-037c71a5fe1e/IMG_6813.png/:/rs=w:1440,h:1440" style="width:300px;height:30px;">
+-->
 
 <!-- BECOME A MEMBER EMBOSSED LABEL -->
 <img src="https://img1.wsimg.com/isteam/ip/ce812a0c-e8f2-45a2-98c6-037c71a5fe1e/IMG_6782.png/:/rs=w:1440,h:1440" style="width:300px;height:30px;">
 
+<!-- BLANK D.PINK LABEL -->
+<!--
 <img src="https://img1.wsimg.com/isteam/ip/ce812a0c-e8f2-45a2-98c6-037c71a5fe1e/IMG_6813.png/:/rs=w:1440,h:1440" style="width:300px;height:30px;">
+-->
 
 <br>
 
@@ -2544,8 +2791,12 @@ LAST.L SUBTITLE EXPANDED 0.5</div>
 <img src="https://img1.wsimg.com/isteam/ip/ce812a0c-e8f2-45a2-98c6-037c71a5fe1e/IMG_6821.png/:/rs=w:1440,h:1440" style="width:250px;height:600px;">
 </center>
 
+<!-- END ========================= BECOME A MEMBER / TIERS ========================= END -->
+
+
+
+<!-- START ============================= [HTML] FOOTER ============================= START -->
 <center>
-<table style="background-color: #F05454;">
 
   <caption>
 	<center>
@@ -2554,64 +2805,62 @@ LAST.L SUBTITLE EXPANDED 0.5</div>
 				<small>
 				Copyright 2026 All rights reserved.<br>
 				V3LLUM is registered trademark of V3LLUM Studio LLC<br>
+				Atlanta, Georgia<br>
+				USA<br>
 				</small>
+				<br>
+				<br>
+				<!-- FACEBOOK -->
+				<a href=""><img src="">Facebook</a>&nbsp;
+				
+				<!-- INSTAGRAM -->
+				<a href=""><img src="">Instagram</a>&nbsp;
+				
+				<!-- YOUTUBE -->
+				<a href=""><img src="">Youtube</a>&nbsp;
+				
+				<!-- EMAIL -->
+				<a href=""><img src="">Email</a>
+				
 					<br><br><br><br>
 	</center>
   </caption>
-  
-<!--  
-<thead>
-    <tr>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-</thead>
--->
 
+
+<table style="background-color: #F05454;">
   <tbody>
 	<!-- ROW #1 (Title) -->
     <tr class="left">
 		<td>
 			<br>
-			<br>
-				&nbsp;&nbsp;Studio of Pontip Vongsengdeuane<br>
-				&nbsp;&nbsp;Artist | Designer | Creative
+				&nbsp;&nbsp;Pontip Vongsengdeuane<br>
+				&nbsp;&nbsp;Artist | Designer | Creative<br>
+				&nbsp;&nbsp;<b>v3llum.studio.co@gmail.com</b><br>
+				<br>
 		</td>
-		<td>
-			<br>
-			<br>
-				Atlanta, Georgia<br>
-				<b>v3llum.studio.co@gmail.com</b>
-		</td>
-		<td>
-			<br>
-				<a href="">About</a><br>
-				<a href="">Products & Services</a><br>
-				<a href="">Contact</a>
-		</td>										
-		<!--  
-       <td>&emsp; &emsp; &emsp; &emsp; &emsp;
-           &emsp; &emsp; &emsp; &emsp; &emsp;
-           &emsp; &emsp; &emsp; &emsp; &emsp;
-           &emsp; &emsp; &emsp; &emsp; &emsp;</td>
-		-->
+		
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
 		
 		<td>
 			<br>
-				<a href="">Facebook</a><br>
-				<a href="">Instagram</a><br>
-				<a href="">Youtube</a>
-				</font>
-		</td>
+				&nbsp;<a href="">About</a><br>
+				&nbsp;<a href="">Products & Services</a><br>
+				&nbsp;<a href="">Contact</a><br>
+				<br>
+		</td>									
+		
 		
     </tr>
   </tbody>
 </table>
 </center>
-<!-- ========== STOP [HTML] FOOTER //END ========== -->
+
+<!-- END =============================== [HTML] FOOTER =============================== END -->
 
 </html>
 
@@ -2620,7 +2869,7 @@ LAST.L SUBTITLE EXPANDED 0.5</div>
 <!-- -->
 
 <script>
-/* ========== [SCRIPT] William Intro //START ========== */
+/* START ========================== [SCRIPT] William Intro ========================== START */
 
 function initWillemLoadingAnimation() {
   const container = document.querySelector(".willem-header");
@@ -2783,13 +3032,13 @@ document.addEventListener("DOMContentLoaded", () => {
   initWillemLoadingAnimation();
 });
 
-/* ========== [SCRIPT] William Intro //END ========== */
+/* END ============================ [SCRIPT] William Intro ============================ END */
 
 /* */
 /* */
 /* */
 
-/* ========== [SCRIPT] MTN. //START ========== */
+/* START =============================== [SCRIPT] MTN. =============================== START */
 
 // GitHub Repo : https://github.com/aryan-tayal/Mountains-Parallax
 // Live Site : https://aryan-tayal.github.io/Mountains-Parallax/
@@ -2811,13 +3060,13 @@ window.addEventListener("scroll", () => {
   man.style.height = `${window.innerHeight - value}px`;
 });
 
-/* ========== [SCRIPT] MTN. //END ========== */
+/* END ================================= [SCRIPT] MTN. ================================= END */
 
 /* */
 /* */
 /* */
 
-/* ========== [SCRIPT] TAG //START ========== */
+/* START =============================== [SCRIPT] TAG =============================== START */
 
 const products = document.querySelectorAll(".product");
 const container = document.querySelector(".container");
@@ -2872,5 +3121,5 @@ products.forEach(product => {
   });
 });
 
-/* ========== [SCRIPT] TAG //END ========== */
+/* END ================================= [SCRIPT] TAG ================================= END */
 </script>
